@@ -13,7 +13,16 @@
 <body>
     <h1>Conteúdo Multimídia de Áudio</h1>
     <hr>
-    
+    <!--Da mesma maneira que o vídeo é necessário colocar um ou mais tipos de áudio para que mesmo o navegador sendo diferente o áudio possa ser reproduzido-->
+    <!--É necessário colocar o atributo controls para que apareça os controles para navegação-->
+    <!--Assim como o vídeo o áudio também tem o atributo autoplay-->
+    <!--E também temos o atributo muted-->
+    <audio controls autoplay>
+        <source src="multimidia/piada.mp3" type="audio/mpeg">
+        <source src="multimidia/piada.ogg" type="audio/mogg">
+        <source src="multimidia/piada.wav" type="audio/wav">
+        Seu navegador não suporta áudio HTML5.
+    </audio>
 </body>
 
 </html>
