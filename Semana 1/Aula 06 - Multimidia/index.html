@@ -14,10 +14,30 @@
     <h1>Conteúdo Multimídia</h1>
     <hr>
     <!--Para colocar um vídeo é necessário usar a tag video, source serve para você acrescentar o vídeo, e se caso colocar mais de 1 vídeo automaticamente o primeiro arquivo que é compativel com o navegador será aberto-->
-    <!--Para obter o controle do vídeo, pause, avanço, etc... é necessario colocar o controls-->
-    <video controls width="800" height="600" autoplay muted>
-        <!--autoplay; inicia automaticamente o vídeo, muted; o vídeo é mutado por padrão-->
+    <!--Para obter o controle do vídeo, pause, avanço, etc... é necessario colocar o atributo controls-->
+    <!--Para o vídeo reproduzir automaticamente é utilizado o atributo autoplay-->
+    <!--Para o vídeo por padrão vir mutado é utilizado o atributo muted-->
+    <!--Para conseguir ter uma imagem como capa do meu vídeo tem a propriedade poster-->
+    <video controls width="800" height="600" muted poster="multimidia/popeye_for_president.jpg">
         <source src="multimidia/PopeyeforPresident.mp4" type="video/mp4">
+        <source src="multimidia/PopeyeforPresident.webm" type="video/webm">
+        <source src="multimidia/PopeyeforPresident.ogv" type="video/ogv">
+        <!--Tag track utilizado para acrescentar a legenda, srclang a lingua a ser falada, src o caminho da legenda e label é como se fosse o nome da legenda que será apresentada no menu da legenda-->
+        <track kind="captions" srclang="en-us" src="multimidia/PopeyeforPresident.en-us.vtt" label="Closed Captions">
+        <!--Para atribuir o padrão para a legenda é necessário colocar o atributo default-->
+        <track kind="subtitles" srclang="pt-br" src="multimidia/PopeyeforPresident.pt-br.vtt" label="Legendas PT-BR"
+            default>
+        <!--Se caso o navegador não for compativel com esses vídeos que foram colocados, será apresentado essa escrita.-->
+        <track kind="subtitles" srclang="es" src="multimidia/PopeyeforPresident.es.vtt" label="Legendas ES">
+        <!--## sobre os atributos do kind: 
+            captions;A faixa define a tradução de diálogos e efeitos sonoros.(adequado para usuários surdos) 
+            chapters;A faixa define os títulos dos capítulos.(adequados para navegar no recurso de mídia)
+            descriptions; A faixa define uma descrição textual do conteúdo do vídeo.(adequado para usuários cegos)
+            metadata; A faixa define o conteúdo usado pelos scripts. Não visível para o usuário.
+            subtitles; A faixa define legendas, usadas para exibir legendas em um vídeo.
+        -->
+        Seu navegador não suporta vídeos HTML5.
+
     </video>
 </body>
 
