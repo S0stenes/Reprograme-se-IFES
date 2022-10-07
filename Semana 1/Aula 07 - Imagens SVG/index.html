@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens SVG</title>
+</head>
+
+<body>
+    <!--As imagens SVG são imagens vetoriais, mesmo que a dimensão mude o qualidade da imagem sempre vai ser bom e a imagem continua leve-->
+    <h1>Imagens SVG</h1>
+    <hr>
+    <!--svg serve para atribuir imagens SVG e width e height é o tamanho da imagem-->
+    <svg width="600" height="300">
+        <!--Os atributos stroke, stroke-width, fill e fill-opacity são atributos mais gerais aparecendo em práticamente todos os elementos de imagens composto em SVG-->
+
+        <!--Um circulo atribuido por SVG com suas características
+        <circle cx="50" cy="50" r="30" stroke="green" stroke-width="4" fill="yellow">
+        -->
+
+        <!--Atribuindo um retângulo e suas características
+        <rect width="60" height="30" x="2" y="2" stroke="green" stroke-width="4" fill="yellow" fill-opacity="0.5" stroke-opacity="0.5" rx="10" ry="10">
+        -->
+
+        <!--Atribuindo uma elipse e suas características
+        <ellipse cx="50" cy="50" stroke="green" stroke-width="4" fill="yellow" rx="30" ry="15">
+        -->
+
+        <!--Atribuindo uma linha e suas características
+        <line x1="0" y1="0" x2="100" y2="100" stroke="green" stroke-wigth="4">
+        -->
+
+        <!--Atribuindo um poligono e suas características
+        <polygon points="100,10,40,198,190,78,10,78,160,198" fill-rule="evenodd" stroke="green" stroke-width="4" fill="yellow">
+        -->
+
+        <!--Atribuindo exibição de multiplas linhas apartir de vertices assim como o poligono
+        <polyline points="0,40,40,40,40,80,80,80,80,120,120,120,120,160" stroke="green" stroke-width="4" fill="none">
+        -->
+
+        <!--Atribuindo um elemento de texto e centralizando-o
+        <text x="300" y="150" text-anchor="middle">
+            SVG é sensacional!
+        </text>
+        -->
+
+        <!--Acrescentando mais um retangulo para verificar o comportamento de animações-->
+        <rect width="60" height="30" fill="yellow" stroke="black" stroke-width="4" x="10" y="10" id="r1" fill="freeze">
+
+        <!--Colocando um retangulo para verificar a centralização do texto-->
+        <rect width="596" height="296" fill="none" stroke="black" stroke-width="4" x="2" y="2">
+
+        <!--Comando responsável para animar e as suas características-->
+        <animate xlink:href="#r1" attributeName="x" from="10" to="400" dur="2s" begin="2s" fill="remove" repeatCount="indefinite">
+    </svg>
+
+</body>
+
+</html>
