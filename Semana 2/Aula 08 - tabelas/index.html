@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+
+<body>
+    <h1>Tabelas</h1>
+    <hr>
+    <!--Adicionando uma tabela e seus atributos-->
+    <!--width é a capacidade que a tabela irá se adaptar pela página, aqui está ocupando 60% da página, de forma lateral.
+    cellpadding; determina o preenchimento da célula.
+    cellspacing; determina o espacamento entre as célula.
+    align; determina o alinhamento da tabela. 
+    bgcolor; que serve para modificar a cor da tabela.
+    frame; serve para definir as bordas da tabela
+    rule; serve para definir as divisões internas, rulls tira os espaçamento entre as células
+-->
+    <table border="1" width="60%" cellpadding="5" cellspacing="4" align="center" bgcolor="aqua" frame="box" rules="all">
+        <!--Título da tabela-->
+        <caption>Título da Tabela</caption>
+        <!--Temos aqui um cabeçalho da tabela-->
+        <thead>
+            <!--Linha na tabela, com vários elementos-->
+            <tr>
+                <!--th informa que são títulos da colunas-->
+                <!--colspan serve para mesclagem de 2 células por coluna-->
+                <th colspan="2">Nome Completo</th>
+                <!--rowspan serve para mesclagem de 2 células por linha-->
+                <th rowspan="2" width="25%">Idade</th>
+            </tr>
+            <tr>
+                <!--th informa que são títulos da colunas-->
+                <th align="left">Nome</th>
+                <th align="left">Sobrenome</th>
+            </tr>
+        </thead>
+        <!--Temos o corpo da tabela atribuida pelo tbody-->
+        <tbody>
+            <tr>
+                <td>Célula 2, 1</td>
+                <td>Célula 2, 2</td>
+                <td align="center">Célula 2, 3</td>
+            </tr>
+            <tr>
+                <td>Célula 3, 1</td>
+                <td>Célula 3, 2</td>
+                <td align="center">Célula 3, 3</td>
+            </tr>
+        </tbody>
+        <!--Divisão semântica para o rodapé-->
+        <tfoot>
+            <tr>
+                <td>Célula 4, 1</td>
+                <td>Célula 4, 2</td>
+                <td align="center">Célula 4, 3</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

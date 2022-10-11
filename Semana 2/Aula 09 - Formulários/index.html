@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+
+<body>
+    <h1>Formulários</h1>
+    <hr>
+    <!--O atributo form, serve para você adicionar campos-->
+    <!--Em method podemos alterar o metodo de envio do formulário-->
+    <form method="get">
+        <!--O p para atribuir como paragráfo foi utilizado para realizar a separação de campos.-->
+        <p>
+            <!--Aqui podemos colocar a quantidade de campos que desejarmos-->
+            <!--Label foi utilizado para ser o título da caixa onde o usuário colocaria o seu nome.-->
+            <!--O for e o id serve para que possamos definir o nome de um campo-->
+            <label for="txtNomeCompleto">Nome Completo</label><br>
+            <!--Input é um campo de entrada, serve para que o usuário digite algo e envie para o servidor.-->
+            <!--O atributo name serve para que quando aquele valor chegar so servidor, tenha o nome dele, e o id serve para identificação do atributo no html -->
+            <!--Podemos utilizar o atributo value e fazer com que o campo que foi criado seja preenchido automáticamente por esse valor, porém não é muito viavel usa-lo aqui então temos o atributo placeholder que irá ter um texto dentro do campo porém não é fixo, quando o usuário clicar irá sumir assim que preenchido-->
+            <input type="text" name="NomeCompleto" id="txtNomeCompleto" placeholder="Digite seu nome completo">
+        </p>
+        <p>
+            <label for="txtEmail">E-mail</label><br>
+            <input type="text" name="Email" id="txtEmail" placeholder="seuemail@gmail.com">
+        </p>
+        <!--fieldset é usado para divisão dos campo em um formulário de forma correta-->
+        <fieldset>
+            <legend>Cargo Pretendido</legend>
+            <input type="radio" name="cargo" id="rdProgramador" value="P">
+            <label for="rdProgramador">Programador</label><br>
+            <input type="radio" name="cargo" id="rdWebDesigner" value="W">
+            <label for="rdWebDesigner">Web Designer</label><br>
+        </fieldset>
+        <p>
+            <input type="checkbox" name="Aceito" id="chkaceceito">
+            <label for="chkaceito">Aceito os termos de uso</label>
+        </p>
+        <p>
+            <label for="slctEstado">Estado</label><br>
+            <select name="Estado" id="slctEstado">
+                <optgroup label="A">
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                </optgroup>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <!--O selected serve para que esse valor seja automaticamente colocado como padrão-->
+                <option value="ES" selected>Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+                <option value="EX">Estrangeiro</option>
+            </select>
+        </p>
+        <p>
+            <label for="slctLinguagens">Linguagens de Programação</label><br>
+            <select name="Linguagens" id="slctLinguagens" size="6" multiple>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="C#">C#</option>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+            </select>
+        </p>
+        <p>
+            <!--Nesse campo podemos realizar a digitação do que foi solicitado e ainda temos a opção de seleção pre definida-->
+            <label for="txtCidade">Cidade</label><br>
+            <input type="text" name="Cidade" id="txtCidade" list="cidades">
+            <datalist id="cidades">
+                <option value="Colatina">
+                <option value="Vitória">
+                <option value="Guarapari">
+                <option value="São Gabriel da Palha">
+                <option value="Vila Velha">
+            </datalist>
+        </p>
+        <p>
+            <!--Aqui criamos um campo de digitação, com uma área especifica para o usuário digitar-->
+            <label for="txtCurriculo">Currículo</label><br>
+            <textarea name="Curriculo" id="txtCurriculo" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <!--Value aqui no tipo submit ele serve como título do campo que foi criado-->
+            <!--Reset serve para limpar os dados que foram colocados no formulário-->
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+
+</html>
+
+<!--Os dados que foram passados ao enviar o formulário vão para a URL e é enviado novamente para o servidor, como o nosso site não é complexo ao ponto de efetuar operações para que aconteça o envio, a URL do nosso site é modificado para ter os dados dos campos que foi preenchido-->
