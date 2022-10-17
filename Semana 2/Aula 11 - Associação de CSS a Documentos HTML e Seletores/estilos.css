@@ -1,0 +1,50 @@
+/* No CSS é necessário saber que o seletor que prevalece é sempre o id, e logo depois o class;
+Podemos selecionar os elementos HTML, tanto pela tag dos mesmo, ou então por idendificadores, sendo eles class e id, para selecionar uma class é necessário digitar .(nome da classe). Para ID é digitado #(nome do ID)
+A hierarquia do CSS é da seguinte forma; 1º ID , 2º Classe e 3º Tipo (i,h1,ul,etc...)
+*/
+h1{
+    color: blue;
+}
+
+i {
+    color: red;
+}
+
+ul{
+    background-color: rgb(64, 160, 112);
+}
+
+.vermelho{
+    color: red;
+}
+
+/* Podemos ter mutiplos seletores dentro de um determinado campo para que tenha as propriedades estabelecidas, sendo um agrupamento de seletores*/
+#p2 , a , h1 {
+    font-size: 24px;
+    color: blue;
+}
+
+/* Temos aqui um seletor geral, que tudo que for feito aqui será alterado na página inteira, todos ou outros seletores são capazes de retirar a propriedade desse seletor geral*/
+*{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Quanto mais especificamos o indendificador melhor é para que possamos atribuir o estilo nele, Exemplo;*/
+h1 i {
+    color: yellow;
+}
+
+/* Para especificar que aquele tipo de elemento HTML é filho de outro podemos atribuir da seguinte forma;*/
+h1 > i{
+    color: black;
+}
+
+/* Podemos também para irmão que estão no mesmo nível hierarquico, esse tipo de seletor vai selecionar somente aqueles que são depois dele, no caso antes da ul não iria acontecer de atribuir esse estilo em um p. Exemplo; */
+ul ~ p{
+    text-decoration: underline;
+}
+
+/* Podemos fazer com que todo aquele esteja do lado de determinado elemento seja selecionado também, Exemplo;*/
+ul + p {
+    text-decoration: none;
+}
