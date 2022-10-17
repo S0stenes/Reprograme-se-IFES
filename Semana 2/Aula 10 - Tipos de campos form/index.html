@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de input</title>
+</head>
+
+<body>
+    <h1>Tipos de Input</h1>
+    <hr>
+    <!--ATRIBUTOS PARA O TYPE TEXT
+    readonly; Faz com que a caixa de texto não seja digitavél .
+    disable; faz com que a caixa de texto não seja digitavél e o fundo seja cinza claro.
+    size; defien a largura do campo.
+    maxlength; define a quantidade de caracteres que o campo pode ter.
+    required; define sem valor que o campo tem que ser obrigatório.
+    autofocus; define que o input tenha foco quando entrar na página.
+    autocomplete; serve para que quando varios atributos que já foram enviados nesse campo, seja alto completado no momento que clicamos no campo, dando a seleção de opções
+    list; vc consegue atribuir uma lista que ao clicar no campo irá aparecer a lista que vc atribuiu com datalist.
+    placeholder; VocÊ atribui oq va iestar digitado dentro do campo para auxiliar a pessoa no que é para ser digitado.
+    pattern; é um padrão de expressão regular para permição na digitação. Entre [] são os caracteres permitidos e entre {} é a quantidade de caracteres daquele tipo é possivel repetir.
+    -->
+
+    <!--ATRIBUTOS PARA O TYPE PASSWORD
+
+    -->
+
+    <!--No form com o atributo action podemos direcionar para onde o formulário será enviado-->
+    <form>
+        <!-- COMANDO DIGITADO ANTES COMO EXEMPLO
+        <input type="text" size="60" maxlength="20" required name="campo2" id="campo2" list="minhalista"><br>
+        -->
+        <!--COMANDO UTILIZANDO O PATTERN
+        <input type="text" pattern="([0-9]{2}) [0-9]{5}-[0-9]{4}" required placeholder="(DD) 99999-9999">
+        -->
+
+        <!--O tipo password pode utilizar todos os atributos do text porém tem alguns que não convém, como por exmplo o list e autocomplete-->
+        <input type="password" name="senha" id="senha"> <br>
+
+        <!--Temos o tipo radio que você escolhe dentre as opções qual você deseja enviar no formulário-->
+        <input type="radio" name="sexo" value="M">Masculino<br>
+        <input type="radio" name="sexo" value="F">Feminino<br>
+        <input type="radio" name="sexo" value="O">Outro<br>
+        <br>
+
+        <!--O tipo checkbox é parecido com o radio porém vocÊ consegue realizar a seleção desses campos diferentemente, seria como um campo do formulário onde a pessoa concorda com os termos de uso, etc...-->
+        <input type="checkbox" name="noticias" value="C"> Noticías<br>
+        <input type="checkbox" name="promocoes" value="C"> Promoções<br>
+        <input type="checkbox" name="alerta" value="C"> Alerta
+        <br>
+        <br>
+
+        <!--O tipo color serve para representação de cor, aparece uma paleta de cores para selecionarmos-->
+        <input type="color"> cor<br>
+        <br>
+
+        <!--Tipo date, apresentação de uma data onde o usuário seleciona a data desejada, com min e max para atribuir o limite e o maximo que o calendário irá ser selecionado-->
+        <input type="date" min="1979-07-01" max="1980-05-20"> data<br>
+        <br>
+
+        <!--datetime-local, ele apresenta uma data da mesma forma que o tipo date porém agpra aparenta a opção para você selecioanr um horário, muito útil para site que realizam a operação de agendamento.-->
+        <input type="datetime-local" min="1979-07-01T00:00:00" max="1980-05-20T17:00:00"> data com horário<br>
+        <br>
+
+        <!--O tipo email ele faz uma validação para ver se realmente existe aquele e-mial e também modifica o teclado quando é dispositivo mobile, ao você digitar é necessário que coloque o @ para que o campo idendifique que aquilo é um e-mail.-->
+        <input type="email"> e-mail<br>
+        <br>
+
+        <!--Esse campo ele serve para fazer o envio de arquivos para o servidor-->
+        <input type="file"> envio de arquivo
+        
+        <!--Temos também o tipo hidder; ele serve para enviar coisas para o servidor sem que apareça na tela, um exemplo de uso desse tipo seria você enviar para o servidor que o o cliente que fez o formulário, é o cliente número "150" ele contribui para o envio de formulário para o servidor.-->
+        <input type="hidden" name="id" value="150"> <br>
+        <br>
+
+        <!--Esse tipo faz com que apareça valores para serem atribuidos em forma de mês por extenso.-->
+        <input type="month" name="mesNascimento" min="2020-12" max="2022-05"> mês<br>
+        <br>
+
+        <!--no tipo number podemos colocar valores somente de números, o atributo step serve para que possamos pular os valores, para chegar mais rápido em determinado valor-->
+        <input type="number" name="valor" min="100" max="1000" step="50"> número<br>
+        <br>
+
+        <!--Temos o tipo range que é uma barra que possamos passar um valor a partir do arrastar da mesma-->
+        <input type="range" name="valor" min="100" max="1000" step="100"> range<br>
+        <br>
+
+        <!--Esse tipo de campo é mapa finalidade de pesquisa-->
+        <input type="search" name="termo" > busca<br>
+        <br>
+
+        <!--Esse tipo de campo serve para digitação de número telefonico, em dispositivos mobile ele faz com que o teclado modifique para somente números.-->
+        <input type="tel" name="telefone"> telefone<br>
+        <br>
+
+        <!--Campo para preenchimento de horário-->
+        <input type="time" name="horaMarcada" min="00:00:00" max="18:00:00"> time<br>
+        <br>
+
+        <!--Esse campo serve para preenchimento de url-->
+        <input type="url" name="enderecoSite"> url <br>
+        <br>
+
+        <input type="week" name="semanaCongresso" min="2021-W18" max="2021-W25"> semana<br>
+        <br>
+
+        <!--O tipo submit é definido para ser o botão para envio dos formulários-->
+        <input type="submit" value="Enviar">
+
+        <!--O tipo reset serve para resetar os campos de um formulário-->
+        <input type="reset" value="Resetar">
+        <br>
+
+    </form>
+</body>
+
+</html>
