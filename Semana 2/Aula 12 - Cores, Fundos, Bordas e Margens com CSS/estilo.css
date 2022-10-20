@@ -14,10 +14,15 @@ body {
     background: #808080 url(img/bg.jpg) repeat right fixed;
     /*
     background-size: 50px; <-- Aqui podemos atribuir o tamanho da img que está de fundo.*/
-    background-color: gray;
 }
 p{
    background-color: rgb(0, 0, 255, 0.5); /* <-- Aqui atribuimos a cor de fundo do paragráfo*/
    color: white; /* <-- Aqui podemos modificar a cor da letra*/
-
+   border-color: black; /* <-- Aqui atribuimos a cor da borda*/
+   border-width: 3px;
+   border-style: solid dotted;
+/* border-style: dashed;  <-- Estilo da borda*/
+/* border-width: 3px;  <-- Tamanho da borda*/
+/* border-left-width: 50px;  <-- Atribuindo o tamanho da bordar na esquerda */
+/* border-left-style: solid; <-- Atribuindo o estilo somente na esquerda */
 }
