@@ -1,17 +1,27 @@
-/* Podemos atribuir as cores de 3 formas, atribuindo o nome da cor, o código hexadecimal da cor e o valor RGB com uma função do CSS*/
 body {
-    /*
+    /* Podemos atribuir as cores de 3 formas, atribuindo o nome da cor, o código hexadecimal da cor e o valor RGB com uma função do CSS
+
     background-color: gray; <-- aqui atribuimos por nome
+
     background-color: #808080; <-- Atribuindo por hexadecimal
+
     background-color: rgb(128,128,128) <-- Atribuindo pela função de RGB do CSS
-     https: //www.w3schools.com/css/css_colors_hsl.asp <-- ##Aqui podemos ver sobre HSL que podemos alterar a cor de maneira diferente, com porcentagem ##
+
+    https: //www.w3schools.com/css/css_colors_hsl.asp <-- ##Aqui podemos ver sobre HSL que podemos alterar a cor de maneira diferente, com porcentagem ##
+
     background-image: url(img/bg.jpg);  <-- Aqui podemos colocar o fundo da minha página com uma img
+
     background-repeat: no-repeat;  <-- Podemos repetir essa imagem de diferentes maneira, se a img for menos podemos fazer um efeito de degrade fazendo ela se repetir várias vezes, com comandos de repeat-y ; repeat-x and no-repeat
+
     background-position: right;  <-- Aqui podemos modificar a posição da nossa imagem de fundo
+
     background-attachment: fixed; <-- Com essa atribuição podemos atribuir se a img de fundo irá rolar junto com a página ou se ficara fixa, entre outras funções 
-    Esse códigos que foram passados podem ser atribuidos de uma só vez, com isso não é necessário digitar cada um individualmente. */
-    /*Para atribuir tudo em uma linha só, temos que ter conhecimento da ordem, primeiro a COR, IMG, REPETIÇÃO, POSIÇÃO e como a IMG irá se comportar na PÁGINA.*/
+
+    Esse códigos que foram passados podem ser atribuidos de uma só vez, com isso não é necessário digitar cada um individualmente.
+    
+    Para atribuir tudo em uma linha só, temos que ter conhecimento da ordem, primeiro a COR, IMG, REPETIÇÃO, POSIÇÃO e como a IMG irá se comportar na PÁGINA.*/
     background: #808080 url(img/bg.jpg) repeat right fixed;
+
     /*
     background-size: 50px; <-- Aqui podemos atribuir o tamanho da img que está de fundo.*/
 }
@@ -21,14 +31,45 @@ p {
     /* <-- Aqui atribuimos a cor de fundo do paragráfo*/
     color: white;
     /* <-- Aqui podemos modificar a cor da letra*/
+
     /*
    border-color: black;  <-- Aqui atribuimos a cor da borda
-   border-width: 3px; <-- Tamanho da borda
-   border-style: solid dotted; <-- Atribuindo que é o estilo no top e no bot é solid, left e rigth é dotted, podemos atribuir para cada lateral, seguindo de forma horária comelando pelo top */
-    /* border-style: dashed;  <-- Estilo da borda*/
-    /* border-width: 3px;  <-- Tamanho da borda*/
-    /* border-left-width: 50px;  <-- Atribuindo o tamanho da bordar na esquerda */
-    /* border-left-style: solid; <-- Atribuindo o estilo somente na esquerda */
-    border: 3px solid white; /* <-- Essa aqui é uma forma de simplificação das bordas, para que fiqeu mais simples de ser digitado, sendo a primeira propriedade tamanho, estilo e depois cor. */
+
+   border-width: 3px; <-- Tamanho da borda 
+
+   border-style: dashed;  <-- Estilo da borda
+
+   border-width: 3px;  <-- Tamanho da borda
+
+   border-left-width: 50px;  <-- Atribuindo o tamanho da bordar na esquerda
+
+   border-left-style: solid; <-- Atribuindo o estilo somente na esquerda */
+
+    border: 3px solid white;
+    /* <-- Essa aqui é uma forma de simplificação das bordas, para que fiqeu mais simples de ser digitado, sendo a primeira propriedade tamanho, estilo e depois cor. */
+
+    border-style: solid dotted;
+    /*<-- Atribuindo que é o estilo no top e no bot é solid, left e rigth é dotted, podemos atribuir para cada lateral, seguindo de forma horária comelando pelo top */
+
+    /* Tem outro atributo para bordas que serve para arredondamento;
+    border-radius: <-- Podemos atribuir o arrendodamento de todas as laterais ou especificar de cada quanto separadamente, com o código ; border-bottom-left-radius: 10px;*/
+    border-radius: 10px;
+
+    margin: 10px auto;
+    /*Aqui atribuimos a margem das laterias*/
+
+    padding: 10px;
+    /*Espaçamento da borda ao texto */
+
+    width: 500px;
+    /*Largura do contéudo do elemento <p>*/
+
+    height: 250px;
+    /*Altura do contéudo */
+
+    /*Esse outline serve como uma borda, porém não utiliza os atributos como a borda comum, tendo uma propriedade outline-offset que serve para que crie uma borda sem que modifique os outros elementos em volta. Outra diferença notavél é que não conseguimos atribuir uma lateral com modificações diferentes, o outline faz com que todas os lados sejam alterados sem ter possibilidade de personalização distinta. 
+    O outside ele acompanha o arredondamento do radius. */
+    outline: 3px solid black;
+    outline-offset: 6px;
 
 }
