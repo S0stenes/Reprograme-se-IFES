@@ -1,0 +1,118 @@
+/*Aqui podemos importar a fonte de forma externa ao nosso código CSS, para atribuirmos mais de uma fonte, podemos colocar &family=Sofia&display=swap
+
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Sofia&family=Tangerine&display=swap');*/
+
+body,
+a {
+    color: gray;
+}
+
+h1 {
+    /*Tamanho da fonte
+    font-size: 30px; */
+
+    /*Uma forma de medida interessante para estarmos usando é o vw, ele proporciona o tamanho da fonte de acordo com o tamanho da tela exibida sendo assim se adaptando conforme é alterado a janela do navegador. */
+    font-size: 5vw;
+
+    /*Alinhamento da fonte*/
+    text-align: center;
+
+    /*Sombra
+    text-shadow: 1px 1px 2px black; */
+
+    /*Aqui atribuimos a familia de fonte */
+    font-family: 'Sofia', cursive;
+
+    /*Estilos da fonte*/
+    font-style: italic;
+
+    /*Peso de uma fonte  por nome*/
+    font-weight: lighter;
+
+    /*Variação das letra
+    font-variant: small-caps; */
+
+    /*Podemos resumir todas as propriedades das fontes dessa maneira;
+    font: normal small-caps bold 24px/60px 'Sofia';*/
+}
+
+p {
+    text-align: justify;
+    /*
+    --Aqui nós podemos fazer com que a escrita seja feita da direita para esquerda, fazendo a escrita seja feita de trás para frente.
+    direction: rtl;
+    unicode-bidi: bidi-override;*/
+
+
+    /*Temos uma propriedade para que possamos adicionar coisas no nosso texto, exemplo disso seria colocar sublinhado no texto.
+    text-decoration: underline wavy;*/
+    text-decoration: underline wavy;
+
+    /*Aqui podemos transformar alguns atributos na formatação do texto*/
+    text-transform: capitalize;
+
+    /*Aqui podemos atribuir que o texto seja identado de forma com que nós possamos escolher o tamanho para isso */
+    text-indent: 50px;
+
+    /*Aqui temos um espaçamento entre os caracteres*/
+    letter-spacing: 2px;
+
+    /*Essa propriedade define a altura da linha*/
+    line-height: 2rem;
+
+    /*Aqui temos o espaçamento mínimo entre palavras*/
+    word-spacing: 5px;
+
+    /*Aqui controla como o navegador vai se comporta com  oespaço em branco;
+    pre <-- ele vai ler da forma que foi digitado no código
+    pre-wrap <-- ele conserva os espaços em branco que foi deixado, fazendo a quebra de linha.
+    pre-line <-- Não conserva o espaço em branco e não faz a quebra de linha*/
+    white-space: normal;
+}
+
+/*Aqui atribuimos o que acontece com links não visitados*/
+a:link {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*Aqui atribuimos para links visitados */
+a:visited{
+    color: blue;
+}
+
+/*Aqui atribuimos para links que passamos o mouse*/
+a:hover{
+    color: red;
+    cursor: pointer;
+}
+
+/*Quando o atributo está sendo clicavél*/
+a:active{
+    color: gray;
+}
+
+/*Atribuindo algumas edições para o link*/
+a{
+    border: solid 1px black;
+    padding: 5px;
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+
+/*Editando a lista e os intens que estão contidos nela*/
+ul{
+    /*Algumas modificações para a lista
+    list-style-type: none;
+    margin: 0;
+    padding: 0;*/
+    /*Colocando figuras em vez de símbolos para marcação da lista*/
+    list-style-image: url(arrow.png);
+}
+
+li{
+    line-height: 40px;
+    /*Aqui podemos colocar cada linha um do lado do outro
+    display: inline-block;*/
+}
