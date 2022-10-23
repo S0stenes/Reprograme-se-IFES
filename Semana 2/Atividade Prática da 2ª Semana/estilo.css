@@ -4,6 +4,7 @@
 /*Corpo da página*/
 body{
     text-align: center;
+    background-color: rgb(236, 228, 193);
 }
 
 /* Cabeçalho da página */
@@ -12,6 +13,7 @@ header{
     margin: -8px;
     width: auto; /*Professor aqui eu defini com auto pois eu utilizo um outro monitor para verificar como que está ficando o site e não completou utilizando 1280px, então defini como auto, espero que não tire nota por isso.*/
     height: 160px;
+    color: white;
 }
 
 table {
@@ -24,8 +26,8 @@ table {
     fill: white; 
     font-size: 56; 
     font-family:sans-serif;
-
 }
+/*Fim cabeçalho*/
 
 /*Foto de perfil*/
 #perfil{
@@ -36,40 +38,38 @@ table {
 }
 /*Fim cabeçalho*/
 
-/*Sessão*/
+/*Menu de navegação*/
 #menu{
     width: 80%;
 }
+
 .menu{
     font-size: 30px;
     height: 60px;
     border-radius: 10px;
-    padding:  5px 0 ;
+    padding:  10px 0 ;
+    padding-bottom: 20px;
 }
+
 a{
     margin: 30px;
     text-decoration: none;
     font-family: caveat;
-    color: black;
-    border: solid 1px white;
+    color: rgb(0, 0, 0);
     padding: 10px 70px;
-    background-color: white;
     border-radius: 10px;
 }
+
 a:hover{
-    background-color: black;
+    background-color: rgb(19, 21, 51);
     color: white;
 }
-
-a:visited{
-    background-color: black;
-    color: white;
-}
-
-
 
 /*Rodapé*/
 footer{
     text-align: center;
+    margin: 0 -8px -7px;
+    width: auto;
+    background-color: white;
 }
 /*Fim rodapé*/

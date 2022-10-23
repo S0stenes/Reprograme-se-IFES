@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade Prática da 2ª Semana</title>
     <link rel="stylesheet" href="estilo.css">
+    <style>
+        /*Apresentação e a imagem*/
+
+        /*Apresentação com meu nome*/
+        #ola {
+            text-align: left;
+            background-color: rgb(32, 24, 24);
+            padding: 0px;
+        }
+
+        /*Botão de contate-me*/
+        #contato {
+            font-family: sans-serif;
+            border: solid 1px black;
+            padding: 20px;
+            background-color: rgb(77, 65, 184);
+            border-radius: 10px;
+            color: white;
+        }
+
+        /*Paragráfos da apresentção*/
+        .eu {
+            color: rgb(250, 250, 250);
+            padding-left: 30px;
+            margin-bottom: 10px;
+        }
+
+        /*Célula da tabela para a apresentção*/
+        .se {
+            border-radius: 20px;
+        }
+
+        /*Fim sessão*/
+    </style>
 </head>
+
 <body>
     <header>
         <table align="center">
@@ -14,25 +50,45 @@
             <tbody>
                 <tr>
                     <!--Atribuindo as 2 linhas e tendo quebra de linha aonde vai a imagem-->
-                    <td rowspan="2" ><img src="img/eu.jpg" alt="Imagem perfil" id="perfil" align="center"></td>
-                    <td id="name" align="left"> <h1>Sóstenes Santana Santos </h1></td>
+                    <td rowspan="2"><img src="img/eu.jpg" alt="Imagem perfil" id="perfil" align="center"></td>
+                    <td id="name" align="left">
+                        <h1>Sóstenes Santana Santos </h1>
+                    </td>
                 </tr>
                 <tr>
-                    <td align="left" >&lt; Designer e Desenvolvedor WEB &gt;</td>
+                    <td align="left">&lt; Designer e Desenvolvedor WEB &gt;</td>
                 </tr>
             </tbody>
         </table>
-        
+
     </header>
 
     <section class="hero">
-        <table align="center"  id="menu">
+        <table align="center" border="1" id="menu" cellspacing="20" >
             <tbody>
                 <tr>
-                    <td  class="menu"><a href="index.html">Principal</a></td>
-                    <td  class="menu"><a href="quemsou.html">Quem Sou</a></td>
-                    <td  class="menu"><a href="projetos.html">Projetos</a></td>
-                    <td  class="menu"><a href="contato.html">Contato</a></td>
+                    <td class="menu"><a href="index.html"
+                            style="background-color:rgb(32, 24, 24) ; color:white;">Principal</a></td>
+                    <td class="menu"><a href="quemsou.html" style="width: 1%; white-space: nowrap;">Quem Sou</a></td>
+                    <td class="menu"><a href="projetos.html">Projetos</a></td>
+                    <td class="menu"><a href="contato.html">Contato</a></td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="ola" class="se">
+                        <p class="eu" style="font-family:Caveat; font-size: 30px; margin-top: -40px">Olá! Eu sou</p>
+                        <p class="eu"
+                            style="Open Sans; color: rgb(255, 187, 0); font-size: 50px; margin-bottom: -20px; margin-top: 20px;">
+                            <b>Sóstenes Santana Santos</b></p>
+                        <p class="eu" style="font-family: Caveat; font-size: 40px; margin-bottom: 40px;">Eu crio
+                            aplicações web<br> modernas e atraentes.</p>
+                        <br>
+                        <a href="http://sostenesdev.com" id="contato"><b>Contate-me!</b></a>
+                    </td>
+                    <td colspan="2" class="se"> <img src="img/pessoa.jpg" alt="Imagem pessoa"
+                            style="width: 620px; border-radius: 20px;"></td>
+                </tr>
+                <tr>
+                    <td colspan="4" align="left" style="font-size: 25px; width: 1%; white-space: nowrap; font-family:sans-serif;"><b> O que você vai encontrar aqui:</b> </td>
                 </tr>
             </tbody>
         </table>
@@ -41,11 +97,12 @@
     <section>
 
     </section>
-
     <footer>
+        <hr>
         <p>Copyright &copy; 2022 </p>
         <img src="img/ifes.png" alt="" width="100">
     </footer>
-    
+
 </body>
+
 </html>
