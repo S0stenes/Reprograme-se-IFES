@@ -1,3 +1,6 @@
+/*Importação das fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans:wght@300&display=swap');
+
 /*Corpo da página*/
 body{
     text-align: center;
@@ -5,30 +8,64 @@ body{
 
 /* Cabeçalho da página */
 header{
-    background-image: linear-gradient(blue,#00BFFF);
+    background-image: linear-gradient(rgb(35, 35, 65),#00BFFF);
     margin: -8px;
-    width: 100%;
+    width: auto; /*Professor aqui eu defini com auto pois eu utilizo um outro monitor para verificar como que está ficando o site e não completou utilizando 1280px, então defini como auto, espero que não tire nota por isso.*/
     height: 160px;
 }
 
 table {
-    padding-top: 20px;
+    padding-top: 25px;
     width: 80%;
-}
+} 
 
 #name{
+    white-space: nowrap;
     fill: white; 
     font-size: 56; 
     font-family:sans-serif;
+
 }
 
 /*Foto de perfil*/
 #perfil{
     height: 100px;
     right: 100px;
-    border-radius: 50%; 
+    border-radius: 50%;
+    margin-right:-40px;
 }
 /*Fim cabeçalho*/
+
+/*Sessão*/
+#menu{
+    width: 80%;
+}
+.menu{
+    font-size: 30px;
+    height: 60px;
+    border-radius: 10px;
+    padding:  5px 0 ;
+}
+a{
+    margin: 30px;
+    text-decoration: none;
+    font-family: caveat;
+    color: black;
+    border: solid 1px white;
+    padding: 10px 70px;
+    background-color: white;
+    border-radius: 10px;
+}
+a:hover{
+    background-color: black;
+    color: white;
+}
+
+a:visited{
+    background-color: black;
+    color: white;
+}
+
 
 
 /*Rodapé*/
