@@ -16,7 +16,7 @@ header{
     background-image: linear-gradient(rgb(35, 35, 65),#00BFFF);
     margin: -8px;
     padding-bottom: 20px;
-    width: 1280px;
+    width: 1310px; /*Professor aqui eu deixei de forma com que fique certo com o meu computador para eu trabalhar melhor, na orientação do professor está falando para colocar em 1280px porém não ficou bom no meu computador */
     height: 160px;
     color: white;
 }
@@ -28,6 +28,7 @@ header td{
 table {
     padding-top: 25px;
     width: 80%;
+    text-align: center;
 } 
 
 #name{
@@ -81,7 +82,7 @@ footer{
     font-family: Open Sans;
     text-align: center;
     margin: 0 -8px -7px;
-    width: 1280px;
+    width: 1310px;
     background-color: white;
 }
 /*Fim rodapé*/
