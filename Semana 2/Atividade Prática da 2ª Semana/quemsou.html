@@ -7,6 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade Prática da 2ª Semana</title>
     <link rel="stylesheet" href="estilo.css">
+    <style>
+        .discri-progre, p {
+            text-align: left;
+        }
+        #bio{
+            font-family: "Open Sans";
+            font-size: 40px;
+            margin: -3px;
+            text-align: left;
+        }
+        td{
+            text-align: left;
+        }
+    </style>
 </head>
 
 <body>
@@ -16,7 +30,7 @@
             <tbody>
                 <tr>
                     <!--Atribuindo as 2 linhas e tendo quebra de linha aonde vai a imagem-->
-                    <td rowspan="2"><img src="img/eu.jpg" alt="Imagem perfil" id="perfil" align="center"></td>
+                    <td rowspan="2"><img src="img/eu.jpg" alt="Imagem perfil" id="perfil" ></td>
                     <td id="name" align="left">
                         <h1>Sóstenes Santana Santos </h1>
                     </td>
@@ -38,19 +52,57 @@
                     <td class="menu"><a href="projetos.html">Projetos</a></td>
                     <td class="menu"><a href="contato.html">Contato</a></td>
                 </tr>
-                <tr>
-                    
-                </tr>
             </tbody>
         </table>
     </section>
 
     <section>
-
+        <table align="center" border="1" cellspacing="30">
+            <tbody>
+                <tr>
+                    <td colspan="4"><h1 id="bio">Minibio</h1>
+                        <p>Adipisicing eiusmod sunt aliquip exercitation culpa consequat cupidatat id adipisicing do. Occaecat occaecat reprehenderit cupidatat qui aute sunt sint ex duis. Non minim ex et veniam eu ad aliquip adipisicing occaecat. Deserunt velit aliqua nostrud eiusmod elit id nostrud ipsum. Reprehenderit sint et magna sit elit aliquip Lorem reprehenderit cupidatat adipisicing eiusmod ex non tempor. Proident ullamco magna fugiat non anim duis. Tempor incididunt ex ex eu id dolore eu occaecat proident cillum.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="left">Habilidades</td>
+                    <td colspan="2" align="left">Idiomas</td>
+                </tr>
+                <tr>
+                    <td class="discri-progre">HTML</td>
+                    <td><progress value="100" max="100" > 100%</progress></td>
+                    <td class="discri-progre">Português</td>
+                    <td><progress value="100" max="100"> 100%</progress></td>
+                </tr>
+                <tr>
+                    <td class="discri-progre">CSS</td>
+                    <td><progress value="80" max="100"> 80%</progress></td>
+                    <td class="discri-progre">Inglês</td>
+                    <td><progress value="60" max="100"> 60%</progress></td>
+                </tr>
+                <tr>
+                    <td class="discri-progre">Java Script</td>
+                    <td><progress value="60" max="100"> 60%</progress></td>
+                    <td class="discri-progre">Espanhol</td>
+                    <td><progress value="80" max="100"> 80%</progress></td>
+                </tr>
+                <tr>
+                    <td class="discri-progre">Node.js</td>
+                    <td><progress value="60" max="100"> 60%</progress></td>
+                    <td class="discri-progre">Alemão</td>
+                    <td><progress value="20" max="100"> 20%</progress></td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <tbody>
+                <tr></tr>
+            </tbody>
+        </table>
     </section>
 
     <footer>
-        <p>Copyright &copy; 2022 </p>
+        <p style="text-align: center;">Copyright &copy; 2022 </p>
         <img src="img/ifes.png" alt="" width="100">
     </footer>
 

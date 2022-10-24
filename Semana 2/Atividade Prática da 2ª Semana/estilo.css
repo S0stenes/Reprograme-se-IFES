@@ -27,14 +27,14 @@ table {
     font-size: 56; 
     font-family:sans-serif;
 }
-/*Fim cabeçalho*/
 
 /*Foto de perfil*/
 #perfil{
     height: 100px;
     right: 100px;
     border-radius: 50%;
-    margin-right:-40px;
+    margin-left: -20px;
+    margin-right: -20px;
 }
 /*Fim cabeçalho*/
 
@@ -68,6 +68,7 @@ a:hover{
 
 /*Rodapé*/
 footer{
+    font-family: Open Sans;
     text-align: center;
     margin: 0 -8px -7px;
     width: auto;
