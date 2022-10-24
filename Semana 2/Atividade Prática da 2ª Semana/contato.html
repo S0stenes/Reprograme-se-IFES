@@ -15,6 +15,21 @@
             margin: -3px;
             text-align: left;
         }
+        input{
+            border-radius: 10px;
+            width: 500px;
+            height: 30px;
+        }
+        #enviar{
+            width: 90px;
+            height: 40px;
+            font-size: 18px;
+            background-color: rgb(77, 77, 185);
+            color: white;
+        }
+        .link-contato:hover{
+            background-color:  rgb(236, 228, 193);
+        }
     </style>
 </head>
 
@@ -42,10 +57,10 @@
         <table align="center" id="menu" cellspacing="20">
             <tbody>
                 <tr>
-                    <td class="menu"><a href="index.html">Principal</a></td>
-                    <td class="menu"><a href="quemsou.html" style="width: 1%; white-space: nowrap;">Quem Sou</a></td>
-                    <td class="menu"><a href="projetos.html">Projetos</a></td>
-                    <td class="menu"><a href="contato.html"
+                    <td class="menu"><a href="index.html" class="link-menu">Principal</a></td>
+                    <td class="menu"><a href="quemsou.html"  class="link-menu" style="width: 1%; white-space: nowrap;">Quem Sou</a></td>
+                    <td class="menu"><a href="projetos.html"  class="link-menu">Projetos</a></td>
+                    <td class="menu"><a href="contato.html"  class="link-menu"
                             style="background-color:rgb(32, 24, 24) ; color:white;">Contato</a></td>
                 </tr>
             </tbody>
@@ -57,6 +72,80 @@
                         <h1 id="title">Entre em contato!</h1>
                         <p>Preencha todos os campos do formulário a seguir e em até 48 horas lhe responderei.<br>
                             Será um prazer lhe atender!</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table align="center">
+            <form>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p><label for="txtAssunto">Assunto</label><br>
+                                <input type="text" name="Assunto" id="txtAssunto" list="Assuntos">
+                                <datalist id="Assuntos">
+                                    <option value="Ajuda">
+                                    <option value="Contato">
+                                    <option value="Motivação">
+                                    <option value="Reunião">
+                                    <option value="Saber mais">
+                                </datalist>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                <label for="txtNome">Nome</label><br>
+                                <input type="text" name="Nome" id="txtNome"
+                                    placeholder="Sóstenes Santana Santos">
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                <label for="txtEmail">E-mail</label><br>
+                                <input type="text" name="Email" id="txtEmail" placeholder="seuemail@gmail.com">
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                <!--Aqui criamos um campo de digitação, com uma área especifica para o usuário digitar-->
+                                <label for="txtMensagem">Mensagem</label><br>
+                                <textarea name="Mensagem" id="txtMensagem" cols="67" rows="10" style="border-radius:10px ;"></textarea>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                <input type="submit" value="Enviar" id="enviar">
+                            </p>
+                            <br>
+                            <hr>
+                        </td>
+                    </tr>
+                </tbody>
+            </form>
+        </table>
+        <table align="center">
+            <thead>
+                <tr>
+                    <td>
+                        <h1>Outras formar de contato:</h1>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Residente em Colatina-ES</p>
+                        <a href="https://criarmeulink.com.br/u/1666641791" class="link-contato">sostenes.dev@outlook.com.br</a>
+                        <p>(27) 99526-7806</p>
+                        <a href="https://www.linkedin.com/in/sóstenes-santana-santos-393030245/" class="link-contato">LinkedIn</a>
                     </td>
                 </tr>
             </tbody>
