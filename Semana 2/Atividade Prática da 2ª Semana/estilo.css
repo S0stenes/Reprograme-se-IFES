@@ -6,14 +6,23 @@ body{
     text-align: center;
     background-color: rgb(236, 228, 193);
 }
+td {
+    text-align: left;
+    font-family: Open Sans;
+}
 
 /* Cabeçalho da página */
 header{
     background-image: linear-gradient(rgb(35, 35, 65),#00BFFF);
     margin: -8px;
-    width: auto; /*Professor aqui eu defini com auto pois eu utilizo um outro monitor para verificar como que está ficando o site e não completou utilizando 1280px, então defini como auto, espero que não tire nota por isso.*/
+    padding-bottom: 20px;
+    width: 1280px;
     height: 160px;
     color: white;
+}
+header td{
+    font-family: sans-serif;
+    font-weight: lighter;
 }
 
 table {
@@ -33,8 +42,9 @@ table {
     height: 100px;
     right: 100px;
     border-radius: 50%;
-    margin-left: -20px;
-    margin-right: -20px;
+    margin-left: -60px;
+    margin-right: 15px;
+    margin-top: 20px;
 }
 /*Fim cabeçalho*/
 
@@ -71,7 +81,7 @@ footer{
     font-family: Open Sans;
     text-align: center;
     margin: 0 -8px -7px;
-    width: auto;
+    width: 1280px;
     background-color: white;
 }
 /*Fim rodapé*/
