@@ -1,0 +1,58 @@
+/*Temos dois atributos na marcação dos seletores que faz com que é adicionado qualquer coisa depois (After) ou antes (Before) desse seletor que foi marcado no CSS por nós. */
+p:after{
+    content: "*";
+}
+
+h1{
+    position: relative;
+    text-align: center;
+}
+
+h1:after{
+    content: "";
+    background-image: linear-gradient(120deg, #e5ea15,#00c4ff);
+    width: 90%;
+    height: 5px;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%) skew(-50deg);
+}
+
+/*Aqui nos atribuimos que o primeiro elemento do paragrafo irá conter essas configurações de CSS */
+#p3:first-letter{
+    font-size: 200%;
+    color: #999;
+}
+
+/*Aqui estamos atribuindo que a primeira linha do nosso paragráfo irá conter essas configurações CSS */
+#p2:first-line{
+    background-color: yellow;
+    font-variant: small-caps;
+}
+
+/*Aqui podemos alterar os incicadores de uma lista, fazendo alteração da cor, atribuindo emoji e realizando algumas edições interessantes ao mesmo*/
+ul>li::marker{
+    content: "✔  ";
+    font-size: 90%;
+}
+
+ol>li::marker{
+    color: blue;
+}
+
+/*Aqui atribuimos que todo link que começe com http irá ser alterado, dessa maneira podemos atribuir essa configurações somente para alguns dos links que foram digitados*/
+a[href^="http"] {
+    /*Display: block serve para atribuirmos que o elemento é em block utilizando toda a linha, se colocarmos inline ele será atribuido como linha*/
+    display: block;
+    font-weight: bold;
+}
+
+a[href^="http"]::after{
+    content: " 🌐";    
+}
+
+/*Aqui podemos atribuir que vai pegar links que terminam com .pdf e atribuindo ainda que depois do link haverá algo*/
+a[href$=".pdf"]::after {
+    content: ".pdf 📑";
+}
