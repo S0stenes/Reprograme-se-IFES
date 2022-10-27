@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores CSS avançados</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <h1>Seletores CSS avançados</h1>
+    <!--Criando um formulário com somente um comando; form>(div>(label+input))*7-->
+
+    <form action="">
+        <div>
+            <label for="">Nome</label>
+            <input type="text" size="30" required>
+        </div>
+        <div>
+            <label for="">Instituição</label>
+            <input type="text" size="30" disabled>
+        </div>
+        <div>
+            <label for="">Site</label>
+            <input type="url" size="30">
+        </div>
+        <div>
+            <label for="">E-mail</label>
+            <input type="email" size="30" required>
+        </div>
+        <div>
+            <label for="">Senha</label>
+            <input type="password" size="30" required>
+        </div>
+        <div>
+            <label for="">Período</label>
+            <input type="number" min="1" max="10" size="5">
+        </div>
+        <div>
+            <input type="checkbox">
+            <label for="">Enviar Notificação</label>
+        </div>
+        <!-- div>fieldset>legend+(input+label)*2 -->
+        <div>
+            <fieldset>
+                <legend>Perfil</legend>
+                <input type="radio" name="perfil">
+                <label for="">Aluno(a)</label>
+                <input type="radio" name="perfil">
+                <label for="">Professor(a)</label>
+            </fieldset>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+        </div>
+
+    </form>
+
+</body>
+
+</html>

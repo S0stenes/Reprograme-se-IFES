@@ -1,0 +1,119 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+}
+
+h1:after {
+    content: "";
+    background-image: linear-gradient(120deg, #e5ea15, #00c4ff);
+    width: 90%;
+    height: 5px;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%) skew(-50deg);
+}
+
+form {
+    text-align: left;
+    display: inline-block;
+}
+
+form>div {
+    margin: 1em 0;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/*Todo label que fica depois do input terá essas configurações; */
+input+label {
+    display: inline;
+    margin: 0;
+}
+
+/*Aqui atribuimos que todo input do tipo radio que estiver dentro do fieldset será selecionado para essas configurações;*/
+/* :not (:first-of-type) - > Serve para atribuir somente os seguinte sem selecionar o primeiro elemento. */
+fieldset>input[type=radio]:not(:first-of-type) {
+    margin-left: 20px;
+}
+
+fieldset {
+    display: inline-block;
+    border-radius: 2px;
+    border: solid 1px gray;
+}
+
+input {
+    border-radius: 2px;
+    border: solid 1px gray;
+}
+
+input:focus {
+    outline: 3px solid gray;
+}
+
+input:required {
+    background-color: aqua;
+}
+
+input[type=password]:valid,
+input[type=email]:valid,
+input[type=text]:valid,
+input[type=url]:valid {
+    background: url('img/check.svg') no-repeat 95% 50% lightgreen;
+    background-size: 12px;
+}
+
+input[type=password]:invalid,
+input[type=email]:invalid,
+input[type=text]:invalid,
+input[type=url]:invalid {
+    background: url('img/alert.svg') no-repeat 95% 50% lightyellow;
+    background-size: 12px;
+}
+
+/*Aqui atribui que quando o valor do número estiver dentro da faixa que foi estabelecida estiver selecionada, aparecerá essas configurações; */
+input[type=number]:in-range {
+    background-color: blue;
+}
+
+/*Caso não esteja dentro da faixa de números estabelecidos, aparecerá essa configuração; */
+input[type=number]:out-of-range {
+    background-color: red;
+}
+
+/*Selecionando o botão que está desabilitado*/
+input[type=text]:disabled {
+    border: dotted 2px gray;
+}
+
+/*Aqui atribuimos que o checkbox na propriedade label, no caso a letra ápos a marcação ficara em negrito*/
+input[type=checkbox]:checked+label,
+input[type=radio]:checked+label {
+    font-weight: bold;
+}
+
+input[type=submit] {
+    background-image: linear-gradient(to right, #314755 0%, #26a0da 51%, #313755 100%);
+    margin: 10px 0;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 20px #aaa;
+    background-size: 200% auto;
+    transition: 0.5s;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+    background-position: right center;
+    transition: 0.5s;
+}
