@@ -1,0 +1,43 @@
+/* É colocado essa configuração pois os navegadores por padrão já atribuem um tamanho de padding e margin autocamaticamente */
+body{
+    padding: 0;
+    margin: 0;
+}
+
+div.conteiner{
+    /* vw significa: viewport width se apropriando do tamanho do navegador para atribuir o seu tamanho - LARGURA, temos também o vh: viewport height: se apropriando ao tamanho do navegador também - ALTURA */
+    width: 80vw;
+    height: 100vh;
+    background-color: gainsboro;
+    margin: 0 auto;
+}
+
+div.cabecalho{
+    height: 120px;
+    background-color: antiquewhite;
+}
+
+div.corpo{
+    background-color: gray;
+    /* Aqui estamos atribuindo que o corpo pegou o tamanho total da página e está descontando 120px do cabeçalho e 120px do rodapé */
+    height: calc(100vh - 240px);
+}
+
+div.menu{
+    display: inline-block;
+    background-color: lightcoral;
+    width: 150px;
+    height: 100%;
+}
+
+div.conteudo{
+    display: inline-block;
+    background-color: lightgreen;
+    height: 100%;
+    width: calc(80vw - 154px);
+}
+
+div.rodape{
+    background-color: lightsalmon;
+    height: 120px;
+}

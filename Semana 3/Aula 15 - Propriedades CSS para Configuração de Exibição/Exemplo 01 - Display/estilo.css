@@ -1,0 +1,25 @@
+/* Aqui atribuimos que todos os elementos html presentes */
+* {
+    border: solid black 1px;
+}
+
+/* Podemos observar que todos os elementos estão dentro de uma linha que pega toda a página, essa configuração não acontece quando temos, um link, span e img, todas elas ficam na mesma linha, um ao lado da outra. Podemos modificar  a propriedade padrão, com a propriedade display;
+
+inline: Fica na mesma linha, o elemento um ao lado do outro, com essa propriedade não é possivel fazer com que o elemento se adeque ao tamanha atribuido pelo width e heigth.
+
+block: Fica somente um elemento por linha, ocupado todo o espaço do local aonde ele se encontra, atraves dele é possivel direcionar o tamanho por width e hegth.
+
+inline-blcok: Basicamente ele tem as propriedades que o block tem, porém fica um ao lado do outro em formato de linha.
+
+contents: faz com que o elemento que foi atribuido suma porém mantenha sua hierarquia.
+
+none: O elemento sai do fluxo de renderização da página e é subistituida pelo próximo elemento.*/
+
+/* Podemos também fazer com que o espaço que o elemento esta ocupando possa ser invisivel, fazendo com que o mesmo fique na página porém não apareça; 
+visibility; hidden */
+
+/* Podemos atribuir ao elemento também uma configuração com que modifique a opacidade do mesmo, a opacity; Os valores atribuidos iram determinada a porcentagem de visibilidade que o elemento vai ter, com o opacity: 0; Podemos ter o mesmo efeito que o visibility: hidden;
+
+O interessante da propriedade opacity é que podemos fazer animações com elas atraves da propriedade transition;
+quando atribuimos transition:0.5s; estamos dizendo que haverá uma transição para ser atribuido o valor colocado no CSS. É interessante colocar a transição no elemento antes da animação para dar um efeito mais bonito.
+ */
