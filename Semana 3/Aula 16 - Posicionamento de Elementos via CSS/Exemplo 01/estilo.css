@@ -1,0 +1,24 @@
+#div1{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    right: 20px;
+    top: 200px;
+
+    /* position: static; É o valor padrão, deixando o elemento estatico sem com que ele se movimente com as propriedades left, top, rigth e bottom */
+
+    /*position: relative; Com essa atribuição podemos utilizar o direcionamento para movimentar o elemento, e o referencial é aonde a div ficaria se estivesse de forma static, e na renderização da página o local aonde essa div deveria ficar se caso fosse static não será afetada.*/
+
+    /*position: fixed; Com essa atribuição o elemento selecionado ele fica fixo na página, mesmo que rolemos o scroll do mouse para descer a imagem. No fixed o posicionamento tem base de forma com que se atribuirmos right: 20px; estaremos falando que o elemento terá 20px de afastamento da parte direita da página. */
+
+    /*position: absolute; Essa atribuição faz com que o elemento se torne absoluto, se houver mais de uma div acima do elemento que foi atribuido, ele se torna referência (tipo pai) atribuindo absolute, se os demais elementos estiverem static, o referêncial do elemento será a página apresentével */
+
+    /* position: sticky; Esse tributo faz com que o elemento selecionado atribuido será fixo até certo ponto na página.
+    
+    z-index:1 ; Aqui atribuimos a profundidade do elemento na página, o padrão é 0 então o elemento ele vai obedecer a ordem de renderização, sendo que a div ou elemento que vem antes ficara em baixo dos demais qua pareceram, se atribuir-mos z-index no ultimo elemento renderizado como 1 ele vai sobrepor todos os demais, podemos atribuir também para -1 sendo assim, o elemento que estiver em cima dos demais será posto em baixo.
+    
+    Se colocarmos 100px no top, bottom, left e right temos o dimensionamento da div ou elemento no centro da tela e se adaptando com o dispositivo que foi aberto, isso com o posiciton: absolute; e o fixed.
+
+    https: //www.w3schools.com/css/css_positioning.asp
+    */
+}
