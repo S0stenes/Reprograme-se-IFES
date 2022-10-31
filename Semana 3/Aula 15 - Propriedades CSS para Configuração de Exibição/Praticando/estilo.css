@@ -34,7 +34,7 @@ div.conteudo{
     display: inline-block;
     background-color: lightgreen;
     height: 100%;
-    width: calc(80vw - 154px);
+    width: calc(80vw - 150px);
 }
 
 div.rodape{
