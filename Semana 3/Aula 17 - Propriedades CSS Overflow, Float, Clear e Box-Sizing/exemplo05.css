@@ -1,0 +1,11 @@
+* {
+    /* Essa propriedade atribuida a página faz com que o elemento considere a borda como margin, se não utilizarmos isso acontecerá que o elemento utilizará o atribuição de 25% mais os 10px da borda que foi atribuida logo abaixo */
+    box-sizing: border-box;
+}
+
+img{
+    float: left;
+    width: 33.33%;
+    border: solid 10px white;
+    border-radius: 20px;
+}

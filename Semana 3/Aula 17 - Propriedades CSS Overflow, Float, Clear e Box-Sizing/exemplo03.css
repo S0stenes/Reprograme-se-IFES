@@ -1,0 +1,21 @@
+img{
+    height: 200px;
+}
+
+p{
+    background-color: bisque;
+    text-align: justify;
+    /* No exemplo anterior usamos hidden para que o contéudo pudesse se alinhar juntamente com a img, aqui o caso pe diferente, pois as imagens não estão dentro do mesmo paragráfo fazendo com que não seja feito o alinhamento. */
+    overflow: hidden;
+}
+
+#img1{
+    /* A img não ficou atrás da outra por que a img é contéudo então não pode realizar essa operação */
+    float: left;
+    margin-right: 10px;
+}
+
+#img2{
+    float: right;
+    margin-left: 10px;
+}

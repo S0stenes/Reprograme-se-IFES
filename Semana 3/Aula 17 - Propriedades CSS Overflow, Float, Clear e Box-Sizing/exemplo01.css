@@ -1,0 +1,31 @@
+div{
+    background-color: gainsboro;
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+    vertical-align: top;
+    margin: 10px;
+    padding: 10px;
+}
+
+#div1{
+    /* Overflow significa transbordar sendo assim podemos observar no site que o contéudo que está ultrapassando o limite da div que foi atribuida, visible determina que ela continue ultrapassando o limite*/
+    overflow: visible;
+}
+
+#div2{
+    /* Aqui podemos ver que o contéudo foi cortado e aparece somente o que foi escrito antes da determinação da div*/
+    overflow: hidden;
+}
+
+#div3{
+    /* De forma que o overflow é igual a scroll a barra de rolagem sempre aparece mesmo que o contéudo não esteja ultrapassando seu limite na div */
+    /* Aqui temos uma barra de rolagem tanto na horizontal quanto na vertical */
+    overflow: scroll;
+    /* Podemos atribuir a barra de rolagem somente na vertical utilizando; overflow-y: scroll; */
+}
+
+#div4{
+    /* Aqui podemos ver que o contéudo foi determinado a ter somente a barra de rolagem na lateral, pelo navegador deterctar somente o contéudo na parte vertical sendo ultrapassada */
+    overflow: auto;
+}

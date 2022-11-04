@@ -1,0 +1,16 @@
+body{
+    margin: 30px;
+}
+
+p>img{
+    margin-right: 10px;
+    /* Float ele flutua atrás do elemento, porém utilizando o float o contéudo sempre mostra-rá o elemento que foi sobreposto */
+    float: left;
+}
+
+p{
+    font-size: 30px;
+    text-align: left;
+    /* Aqui forçamos o navegador a considerar o paragráfo o tamanho da img */
+    overflow: hidden;
+}

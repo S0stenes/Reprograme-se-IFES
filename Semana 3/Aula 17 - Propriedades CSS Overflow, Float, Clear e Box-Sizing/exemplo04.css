@@ -1,0 +1,33 @@
+#div1, #div2{
+    height: 140px;
+    width: 140px;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+}
+
+#div1{
+    background-color: beige;
+    /* Se atribuirmos isso, podemos ver que o paragráfo sobe, uma vez que a div 1 está flutuando, o contéudo não para de se renderizar */
+    float: left;
+    margin-right: 10px;
+}
+
+#div2{
+    background-color: lightcoral;
+    float: right;
+    margin-left: 10px;
+}
+
+p{
+    text-align: justify;
+    /* clear atribui oque o elemento vai considerar, se colocarmos both ele considera os elementos flutuantes tanto na direita quanto esquerda e acaba que o paragráfo fique de baixo das divs */
+    /* Se colocarmos as divs do lado left e atribuir o clear como right, ele vai se encaixar do lado das divs e não ficará em baixo */
+    clear: both;
+}
+
+#divPai{
+    background-color: bisque;
+    /* Para atribuirmos que o contéudo de texto considere o tamanho das divs, é necessário criar um elemento envolvendo todos e colocar overflow: hidden; */
+    overflow: hidden;
+}
