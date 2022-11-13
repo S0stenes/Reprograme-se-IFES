@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Sistema de layout em grid</title>
+    <style>
+        .h400 {
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- Para conseguirmos atribuir as colunas igualmentes é necessário que coloquemos somente col ára atribuir as colunas por iguais, para que não haja estrapolação das 12 colunas associadas automáticamente pelo bootstrap -->
+            <div class="col bg-dark bg-opacity-50 h400"></div>
+            <div class="col-9 bg-dark bg-opacity-75 h400"></div>
+            <div class="col bg-dark bg-opacity-50 h400"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
