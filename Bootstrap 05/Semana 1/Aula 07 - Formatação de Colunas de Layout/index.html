@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Aqui estamos atribuindo que o script ele será carregado após todo o carregamento da página, de forma com que o defer, é utilizado para isso. -->
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <style>
+        .row {
+            height: 200px;
+            background-color: aliceblue;
+        }
+
+        .col-3 {
+            background-color: antiquewhite;
+            padding: 20px;
+            border: solid 1px black;
+        }
+    </style>
+    <title>Formatação de Colunas</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <div class="row"> -->
+            <div class="col-3 ">DIV1</div>
+            <div class="col-3 ">DIV2</div>
+            <!-- <div class="col-3">DIV3</div> -->
+        <!-- </div> -->
+    </div>
+
+</body>
+
+</html>
+
+<!-- Considerações finais kkk -->
+
+<!-- align-items-start (or center / or end) -> As colunas seram diminuidas para caberem somente o contéudo 
+conseguimos atribuir para o tamanho da tela se quisermos como por exemplo: align-items-xxl-center -->
+
+<!-- justify-content-center (or start/  or end) -> As colunas ficaram juntas e centralizadas
+between colocará um espaçamento entre as colunas
+around colocará um espaçamento entre as colunas e metade desse espaçamento nas laterais
+evenly colocará o espaçamento igual entre as colunas e nas laterais-->
+
+<!-- Para forçarmos a quebra de linhas entre as divs e colocar uma div.w-100 -->
+
+<!-- Se quisermos podemos alterar a ordem das divs utilizando: order -->
+
+<!-- offset -> fará que a div se desloque de acordo com o número que você colocar um exemplo (offset-1 -> deslocará 1 coluna da direita) -->
+
+<!-- ms-auto -> seria uma margin a esquerda (margin start) e atribuindo o auto ela irá totalmente para a direita -->
+
+<!-- mx-auto -> tanto a margin esquerda e direita foram atribuidas como automatica para a centralização da div -->
