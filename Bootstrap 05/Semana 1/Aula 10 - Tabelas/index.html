@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <title>Tabelas</title>
+</head>
+
+<body>
+        <div class="container">
+            <!-- Para atribuir como tabela usamos a class="table" -->
+            <!-- table-(apreviação) atribuimos as cores da tabela, são 8 sufixicos que atribuimos em uma tabela , temos o; primary, secondary, danger, warning, info, dark e ligth -->
+            <!-- table-striped -> Deixa a tabela listrada -->
+            <!-- Podemos atribuir essa listra nas colunas também colocando table-striped-columns -->
+            <!-- table-hover -> Passando o mouse em cima fica escura a linha -->
+            <!-- Podemos deixar destacada a linha ou coluna utilizando o table-active -->
+            <!-- table-bordered -> deixará borda nas linhas e tabelas. e Remove as linha verticais -->
+            <!-- table-borderless -> remove as linhas horizontais e verticais-->
+            <!-- table-sm -> a tabela fica mais compacta -->
+            <!-- align-middle -> Faz com que o corpo da tabela fique alinhado de forma que se adicionarmos um paragráfo ele se comporte melhor entre as outras células  -->
+            <!-- caption-top -> Por padrão o título da tabela fica na parte inferior da tabela, com esse comando ela vai para o topo -->
+            
+            <!-- Uma observação interresando sobre as tabelas é que se usarmos uma tabela dentro de outra tabela ela não vai herdar as caracteristicas que foram atribuidas na classe pelo elemento do pai da tabela, então devemos por as classes no elemento filho. -->
+
+            <table class="table table-striped table-bordered caption-top">
+                <thead>
+                    <tr>
+                        <th>Coluna 1</th>
+                        <th>Coluna 2</th>
+                        <th>Coluna 3</th>
+                        <th>Coluna 4</th>
+                    </tr>
+                </thead>
+                <!-- table-group-divider -> Faz com que o corpo da tabela tem uma divisão entre o título -->
+                <tbody class="table-group-divider">
+                    <tr>
+                        <td>Coluna 1</td>
+                        <td>Coluna 2</td>
+                        <td>Coluna 3</td>
+                        <td>Coluna 4</td>
+                    </tr>
+                    <tr>
+                        <td>Coluna 1</td>
+                        <td>Coluna 2</td>
+                        <td>Coluna 3</td>
+                        <td>Coluna 4</td>
+                    </tr>
+                    <tr>
+                        <td>Coluna 1</td>
+                        <td>Coluna 2</td>
+                        <td>Coluna 3</td>
+                        <td>Coluna 4</td>
+                    </tr>
+                    <tr>
+                        <td>Coluna 1</td>
+                        <td>Coluna 2</td>
+                        <td>Coluna 3</td>
+                        <td>Coluna 4</td>
+                    </tr>
+                    <tr>
+                        <td>Coluna 1</td>
+                        <td>Coluna 2</td>
+                        <td>Coluna 3</td>
+                        <td>Coluna 4</td>
+                    </tr>
+                </tbody>
+                <caption class="text-center">Título da Tabela</caption>
+            </table>
+        </div>
+        <hr>
+
+        <div class="container">
+            <!-- Adicionando essa div atribuindo table-responsive temos uma barra de rolagem da própria tabela para facilitar a rolagem -->
+            <div class="table-responsive">
+            <table class="table table-striped table-bordered caption-top">
+               <tr>
+                <td>Célula 1</td>
+                <td>Célula 2</td>
+                <td>Célula 3</td>
+                <td>Célula 4</td>
+                <td>Célula 5</td>
+                <td>Célula 6</td>
+                <td>Célula 7</td>
+                <td>Célula 8</td>
+                <td>Célula 9</td>
+                <td>Célula 10</td>
+                <td>Célula 11</td>
+                <td>Célula 12</td>
+                <td>Célula 13</td>
+                <td>Célula 14</td>
+                <td>Célula 15</td>
+                <td>Célula 16</td>
+                <td>Célula 17</td>
+                <td>Célula 18</td>
+                <td>Célula 19</td>
+                <td>Célula 20</td>
+               </tr>
+               <tr>
+                <td>Célula 1</td>
+                <td>Célula 2</td>
+                <td>Célula 3</td>
+                <td>Célula 4</td>
+                <td>Célula 5</td>
+                <td>Célula 6</td>
+                <td>Célula 7</td>
+                <td>Célula 8</td>
+                <td>Célula 9</td>
+                <td>Célula 10</td>
+                <td>Célula 11</td>
+                <td>Célula 12</td>
+                <td>Célula 13</td>
+                <td>Célula 14</td>
+                <td>Célula 15</td>
+                <td>Célula 16</td>
+                <td>Célula 17</td>
+                <td>Célula 18</td>
+                <td>Célula 19</td>
+                <td>Célula 20</td>
+               </tr>
+               <tr>
+                <td>Célula 1</td>
+                <td>Célula 2</td>
+                <td>Célula 3</td>
+                <td>Célula 4</td>
+                <td>Célula 5</td>
+                <td>Célula 6</td>
+                <td>Célula 7</td>
+                <td>Célula 8</td>
+                <td>Célula 9</td>
+                <td>Célula 10</td>
+                <td>Célula 11</td>
+                <td>Célula 12</td>
+                <td>Célula 13</td>
+                <td>Célula 14</td>
+                <td>Célula 15</td>
+                <td>Célula 16</td>
+                <td>Célula 17</td>
+                <td>Célula 18</td>
+                <td>Célula 19</td>
+                <td>Célula 20</td>
+               </tr>
+               <tr>
+                <td>Célula 1</td>
+                <td>Célula 2</td>
+                <td>Célula 3</td>
+                <td>Célula 4</td>
+                <td>Célula 5</td>
+                <td>Célula 6</td>
+                <td>Célula 7</td>
+                <td>Célula 8</td>
+                <td>Célula 9</td>
+                <td>Célula 10</td>
+                <td>Célula 11</td>
+                <td>Célula 12</td>
+                <td>Célula 13</td>
+                <td>Célula 14</td>
+                <td>Célula 15</td>
+                <td>Célula 16</td>
+                <td>Célula 17</td>
+                <td>Célula 18</td>
+                <td>Célula 19</td>
+                <td>Célula 20</td>
+               </tr>
+               <tr>
+                <td>Célula 1</td>
+                <td>Célula 2</td>
+                <td>Célula 3</td>
+                <td>Célula 4</td>
+                <td>Célula 5</td>
+                <td>Célula 6</td>
+                <td>Célula 7</td>
+                <td>Célula 8</td>
+                <td>Célula 9</td>
+                <td>Célula 10</td>
+                <td>Célula 11</td>
+                <td>Célula 12</td>
+                <td>Célula 13</td>
+                <td>Célula 14</td>
+                <td>Célula 15</td>
+                <td>Célula 16</td>
+                <td>Célula 17</td>
+                <td>Célula 18</td>
+                <td>Célula 19</td>
+                <td>Célula 20</td>
+               </tr>
+            </table>
+            </div>
+        </div>
+</body>
+
+</html>
