@@ -7,11 +7,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
-    <title>Document</title>
+    <title>Tipografia</title>
 </head>
 
 <body>
+    <!-- Demosntração de que o bootstrap ele altera a formatação do navegador -->
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet corrupti commodi pariatur dignissimos distinctio eos accusantium impedit adipisci tempore esse? Delectus quaerat praesentium commodi fuga aspernatur sapiente deleniti, ab ullam? Nostrum eaque aperiam ipsa, expedita animi sapiente quas maxime quibusdam corporis vel molestias aspernatur delectus ex harum reiciendis rerum inventore id commodi suscipit et veritatis temporibus consequatur perspiciatis ad! Aperiam voluptate expedita quisquam officiis nihil porro placeat repellendus aliquid? Atque, amet adipisci. Quam dolore nam amet! Illo quos, nulla ad architecto voluptatem id possimus unde fugit earum expedita. Quisquam, rem odit nisi ad beatae vel ab quaerat amet atque doloribus!</p>
 
+    <!-- Aqui temos uma pequena amostra de como que são os títulos atribuidos normalmente pelo bootstrap -->
+    <div class="container">
+        <h1>h1 - Título de Nível 1</h1>
+        <h2>h2 - Título de Nível 2</h2>
+        <h3>h3 - Título de Nível 3</h3>
+        <h4>h4 - Título de Nível 4</h4>
+        <h5>h5 - Título de Nível 5</h5>
+        <h6>h6 - Título de Nível 6</h6>
+    </div>
+    <hr>
+
+    <div class="container">
+        <!-- O bootstrap ele pode fazer com que paragráfos que tenham a classe atribuida como h1,h2,h3... sejam formatados como títulos-->
+        <p class="h1">.h1 - Classe de Título de Nível 1</p>
+        <p class="h2">.h2 - Classe de Título de Nível 2</p>
+        <p class="h3">.h3 - Classe de Título de Nível 3</p>
+        <p class="h4">.h4 - Classe de Título de Nível 4</p>
+        <p class="h5">.h5 - Classe de Título de Nível 5</p>
+        <p class="h6">.h6 - Classe de Título de Nível 6</p>
+    </div>
+    <hr>
+
+    <!-- Aqui temos títulos com estilos diferentes do padrão que o bootstrap oferece -->
+    <div class="container">
+        <h1 class="display-1">Display 1</h1>
+        <h1 class="display-2">Display 2</h1>
+        <h1 class="display-3">Display 3</h1>
+        <h1 class="display-4">Display 4</h1>
+        <h1 class="display-5">Display 5</h1>
+        <h1 class="display-6">Display 6</h1>
+    </div>
+    <hr>
+
+    <div class="container">
+        <!-- A classe lead fica maiis sofisticado para melhor leitura do usuário -->
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptates voluptatum magnam consequatur exercitationem? Vitae architecto corrupti officia corporis atque quas iste, necessitatibus sed fugiat nulla, quos beatae quaerat maiores, nihil rerum numquam mollitia expedita veniam delectus ducimus! Laboriosam, eius.</p>
+    </div>
+    <hr>
+    
+    <!-- Elementos pelo html para exibição e caracteristica semântica do mesmo  -->
+    <div class="container">
+        <p>Texto em <mark>marcado</mark></p>
+        <p>Texto com aspecto de <del>excluído</del></p>
+        <p>Texto <s>riscado</s></p>
+        <p>Texto <ins>recém-inserido</ins></p>
+        <p>Texto <u>sublinhado</u></p>
+        <p>Texto <small>pequeno</small></p>
+        <p>Texto <strong>encorpado</strong></p>
+        <p>Texto <em>itálico</em></p>
+    </div>
+    <hr>
+
+    <!-- Esteque de desenvolvimento WEB, aqui haverá uma sitação da sigla apresentada -->
+    <div class="container"><abbr title="Mongo, Express, React, Node">MERN</abbr></div>
+    <hr>
+    
+    <!-- Aqui teremos no formado desitação com o bootstrap -->
+    <div class="container">
+        <figure class="text-end">
+            <blockquote class="blockquote" cite="Fulado de Tal">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima voluptatum totam beatae corporis fugiat asperiores quaerat dolor, dolorum, officiis odio illum vitae saepe magni repellendus aliquam quod molestiae nostrum! Iusto quidem aperiam magni sequi distinctio omnis repudiandae id eveniet laboriosam.</p>
+            </blockquote>
+            <figcation class="blockquote-footer">
+                <cite>Fulano Famoso</cite>, diretor de cinema
+            </figcation>
+        </figure>
+    </div>
+    <hr>
+
+    <!-- Veremos agora a formatação de listas com o bootstrap -->
+    <div class="container">
+        <ul class="list-unstyled">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+        </ul>
+        <hr>
+
+        <!-- Lista em formato horizontal, um ao lado do outro -->
+        <ul class="list-inline">
+            <li class="list-inline-item">Item 1</li>
+            <li class="list-inline-item">Item 2</li>
+            <li class="list-inline-item">Item 3</li>
+            <li class="list-inline-item">Item 4</li>
+            <li class="list-inline-item">Item 5</li>
+        </ul>
+        <hr>
+
+        <!-- Lista de definições -->
+        <dl>
+            <dt>Termo 1</dt>
+            <dd>Descrição do termo 1</dd>
+            <dt>Termo 2</dt>
+            <dd>Descrição do termo 2</dd>
+            <dt>Termo 3</dt>
+            <dd>Descrição do termo 3</dd>
+            <dt>Termo 4</dt>
+            <dd>Descrição do termo 4</dd>
+            <dt>Termo 5</dt>
+            <dd>Descrição do termo 5</dd>
+        </dl>
+    </div>
 </body>
 
 </html>
