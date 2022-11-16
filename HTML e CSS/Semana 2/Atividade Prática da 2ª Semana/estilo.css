@@ -1,6 +1,12 @@
 /*Importação das fontes*/
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans:wght@300;400;800&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /*Corpo da página*/
 body {
     text-align: center;
@@ -15,18 +21,20 @@ td {
 /* Cabeçalho da página */
 header {
     background-image: linear-gradient(rgb(35, 35, 65), #00BFFF);
-    margin: -8px;
+    /* margin: -8px;
     padding-bottom: 20px;
     padding-left: 15px;
+    height: 160px; */
     width: 100%;
     /*Professor aqui eu deixei de forma com que fique certo com o meu computador para eu trabalhar melhor, na orientação do professor está falando para colocar em 1280px porém não ficou bom no meu computador */
-    height: 160px;
     color: white;
+    padding: 50px calc(10% + 2vw);
 }
 
 header td {
     font-family: sans-serif;
     font-weight: lighter;
+    vertical-align: middle;
 }
 
 table {
