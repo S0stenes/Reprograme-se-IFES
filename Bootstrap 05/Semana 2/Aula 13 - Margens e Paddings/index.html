@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Margens Externas e Internas</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Os valores do bootstrap equivalem a rem, sendo 0rem para 0, 0.25rem para 1, 0.5rem para 2, 1rem para 3, 1.5rem para 4 e 3rem para 5.   -->
+        <!-- Para definirmos o espaçamento de margens externas usamos o m-0,  indo até m-5. Se utilizarmos a margem m-4 para uma paragráfo e m-4 no paragráfo de baixo e no de cima, a margen deles não será somada, por compartilharem o mesmo valor a margem prevalecerá a mesma -->
+        <!-- Para definirmos aonde queremos a margem, tanto interna quando externas, temos os prefixos para realização do mesmo;
+        ms ou ps -> margin-start / padding-start (Lado esquerdo - início)
+        me ou pe -> margin-end / padding-end (Lado direito - final)
+        mt ou pt -> margin-top / paading-top (Top - canto superior) 
+        mb ou pb -> margin-bottom / paading-bottom (Bottoom - canto inferior)
+    
+        Temos a opção de utilizaarmos os dois lados, no caso, somente os cantos laterais e cantos superiores
+        mx ou px -> Vai alterar somente as duas laterais tanto direita quanto esquerda
+        my ou py -> Vai alterar somente os cantos superiores e inferiores. -->
+        <p class="text-bg-dark m-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, sit neque inventore repellat officiis saepe! Sequi omnis repellendus accusamus illo!</p>
+        <p class="text-bg-dark m-4 p-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, sit neque inventore repellat officiis saepe! Sequi omnis repellendus accusamus illo!</p>
+        <p class="text-bg-dark">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, sit neque inventore repellat officiis saepe! Sequi omnis repellendus accusamus illo!</p>
+    </div>
+    <!-- Aqui temos a centralização de um elemento por magins externas no bootstrap -->
+    <div class="container bg-secondary">
+        <div class="bg-primary col-4 p-5 mx-auto"></div>
+    </div>
+
+</body>
+
+</html>
