@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <title>Configurações de Visibilidade</title>
+    <style>
+        div.border {
+            height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="p-5 bg-danger"></div>
+    <!-- d-block -> Ela configura a nossa div como block (display do css)
+        d-inline -> Configura como linha (display)
+        d-inline-block -> Configura como linha e bloco ao mesmo tempo (Display) 
+        Temos diversas variações, então podemos também atribuir ao elemento caracteristicas responsivas com sm/lg/xxl,etc... 
+        d-none e d-lg-block -> Podemos fazer com que a div não apareça até o momento que a tela mude de responsividade
+    -->
+    <!-- invisible -> faz com que o elemento não apareça mas o campo aonde ele estava será renderizado normalmente -->
+    <div class="p-4 col-3 d-block m-3 bg-primary"></div>
+    <div class="p-4 col-3 d-block m-3 bg-success"></div>
+    <div class="p-4 col-3 d-block m-3 bg-warning"></div>
+    <hr>
+    <!-- Mostrando as caracteristicas do transbordamento de contéudo -->
+    <div class="container bg-info mt-3">
+        <div class="row">
+            <!-- overflow-auto -> Faz com que haja uma barra de rolagem para que o texto se encaixe dentro da div -->
+            <div class="border p-2 col-3 overflow-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+                consequuntur dolorum harum libero iste perferendis, a tempore molestias ipsam officia quo illo
+                consectetur minima qui, laboriosam ratione fuga ab. In. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Molestias, id!</div>
+            <!-- overflow-hidden -> Oculta o que foi transbordado -->
+            <div class="border p-2 col-3 overflow-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laborum consequuntur dolorum harum libero iste perferendis, a tempore molestias ipsam officia quo illo
+                consectetur minima qui, laboriosam ratione fuga ab. In. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Molestias, id!</div>
+            <!-- Temos aqui o padrão que é apresentado quando há o transbordamento -->
+            <div class="border p-2 col-3 overflow-visible">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laborum consequuntur dolorum harum libero iste perferendis, a tempore molestias ipsam officia quo illo
+                consectetur minima qui, laboriosam ratione fuga ab. In. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Molestias, id!</div>
+            <!-- overflow-scroll -> Atribui a barra de rolagem tanto no eixo x quanto y mesmo que não haja transbordamento do contéudo -->
+            <div class="border p-2 col-3 overflow-scroll">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laborum consequuntur dolorum harum libero iste perferendis, a tempore molestias ipsam officia quo illo
+                consectetur minima qui, laboriosam ratione fuga ab. In. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Molestias, id!</div>
+        </div>
+    </div>
+</body>
+
+</html>

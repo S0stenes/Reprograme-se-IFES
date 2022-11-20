@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <title>Configurações de Visibilidade (Exemplo)</title>
+    <style>
+        div.border {
+            height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Temos um display do bootstrap que não realiza a impressão caso o cabeçalho seja desnecessário para imprimir o artigo; d-print-none -->
+    <header class="p-3 text-bg-dark d-print-none">
+        <div class="container">
+            <h1 class="display-1">Cabeçalho</h1>
+        </div>
+    </header>
+    <article class="container my-3">
+        <h1 class="mb-4">Título do Artigo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, odio voluptatum quo inventore aspernatur, vel
+            itaque provident nisi magnam nihil qui est quis iusto sequi, sint soluta officiis odit dolorum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, quasi! Incidunt possimus illo error iure
+            eos perferendis, aspernatur quis corrupti rerum sequi quibusdam velit nam vitae cumque suscipit temporibus
+            recusandae.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta aliquid quaerat optio eius dignissimos autem
+            architecto. Inventore voluptatibus unde molestiae aliquid, sed ad necessitatibus reprehenderit vitae in
+            quisquam id. Fuga.</p>
+            <!-- Nesse pagráfo na visualização da página ele não aparece, mas no momento de impressão podemos visualiza-lo -->
+        <p class="d-none d-print-block">Fonte: meusite.com.br</p>
+    </article>
+</body>
+
+</html>
