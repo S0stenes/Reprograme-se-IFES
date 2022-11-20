@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Formatação de Textos</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 3 classes básicas para alinhamento de texto
+
+            podemos fazer a responsividade com essas classes text-(sm/lg/xxl/...)-start(or center or end) 
+
+        text-start -> O texto se alinha na esuqerda
+        text-center -> O texto se alinha no centro
+        text-end -> o texto se alinha na direita 
+        text-nowrap -> faz com que o texto siga somente em uma linha
+        text-break -> se tivermos uma palavra que é muito grande e faz com que haja barra de rolagem, com esse comando há uma quebra na palavra
+        -->
+
+        <!-- 3 classes para modificar as caracteristicas de minusculas e maiunsculas
+            text-lowercase -> Todas as letras ficam em minuscula
+            text-uppercase -> Todas as letras ficam em maiuscula
+            text-capitalize -> Todas as palavras tem a inicial com letra maiuscula
+         -->
+
+        <!-- O tamanho da fonte pode ser atribuindo com;
+        fs-1(1 -6) -> Modifica o tamanho da fonte, esses tamanhos até 6 são caracteristicos para atribuir como de h1 até h6 -->
+
+        <!-- 4 classes para modificar a altura da linha de texto
+            lh-1 -> As linha ficam compactadas com uma altura minima para estarem juntas
+            lh-sm -> É uma altura um pouco mais alta que lh-1
+            lh-base -> Altura padrão 
+            lh-lg -> Espaçamento duplo 
+        -->
+
+        <!-- font-monospace -> A fonte é mono espaçada -->
+
+        <!-- text-decoration-undeline -> Atribui ao texto um sublinhado
+        text-decoration-line-through -> Faz com que o texto fique com um corte no meio
+        -->
+
+        <!-- text-truncate -> Mostra somente a primeira linha do texto e fica com ... mostrando que há algo a mais-->
+
+        <p class="fs-3 text-center text-muted">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi deleniti nostrum
+            numquam eveniet voluptatum! Laborum ipsam nisi, reprehenderit sunt assumenda quod veritatis blanditiis
+            asperiores dolorem velit labore necessitatibus quia est?
+            <!-- Com a classe text-reset o link passa a atribuir a cor do elemento pai que no caso é o paragráfo -->
+            <!-- text-decoration-none -> Remove o sublinhado do link -->
+            <a href="#" class="text-reset text-decoration-none">Link qualquer</a>
+        </p>
+    </div>
+    <hr>
+    <!-- Modificando o peso do texto -->
+    <div class="container">
+        <p class="fw-bold">Texto com peso negrito</p>
+        <p class="fw-semibold">Texto com peso semi-negrito</p>
+        <p class="fw-normal">Texto com peso normal</p>
+        <p class="fw-light">Texto com peso leve</p>
+        <p class="fst-italic">Texto com estilo itálico</p>
+        <p class="fst-normal">Texto com estilo normal</p>
+    </div>
+
+</body>
+
+</html>
