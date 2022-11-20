@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Bordas e Sombras</title>
+</head>
+
+<body>
+    <!-- Atribuindo bordas no elemento -->
+    <div class="container p-5">
+        <!-- Temos aqui algumas configurações passadas para que haja borda com as configurações do bootstrap
+        border -> Atribui uma borda para a div
+        border-dark -> Atribui a cor para a borda, podemos modificar essa cor para os padrões que temos no bootstrap
+        border-5 -> Temos a configuração de expessura da borda
+        border-opacity -> Atribuimos a opacidade da borda (Com os padrões que temos do bootstrap)
+        border-top (bottom, start and end) -> Atribuimos aonde a borda vai estar -->
+
+        <!-- Podemos colocar o elemento rounded -> Serve para deixar as quinas da borda arredondados
+        Se quisermos podemos atribuir arredondamento somente nas quinas do topo com rounded-top, ou somente na parte inferior com bottom e start e end , para os canto direito e esquerdo
+        rounded-pill -> Deixa em formato de pilula
+        rounded-circle -> Deixa no aspecto de circulo -->
+        <div class="col-4 mx-auto p-5 bg-success border border-dark border-5 rounded-3"></div>
+    </div>
+    <!-- Atribuindo sombras do elemento -->
+    <div class="container p-5">
+        <!-- shadow-none -> Remove qualquer tipo de sombra que tivermos
+        shadow-sm -> Uma sombra impercepitivel
+        shadow -> Uma sombra media
+        shadow-lg -> Uma sombra maior -->
+        <div class="col-4 mx-auto p-5 bg-success border border-dark border-5 rounded-3 shadow-lg"></div>
+    </div>
+</body>
+
+</html>
