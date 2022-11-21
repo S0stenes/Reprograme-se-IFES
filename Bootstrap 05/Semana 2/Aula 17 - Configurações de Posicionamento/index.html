@@ -7,11 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
-    <title>Edit</title>
+    <title>Posicionamento</title>
 </head>
 
 <body>
+    <!-- Podemos atribuir formas de fixação para os elementos;
+    fixed-top -> Fixa o elemento na parte do topo da página
+    fixed-bottom -> Fixa o elemento na parte inferior da página
 
+    OBS: Quando atribuimos o modo de fixação, a parte de renderização não carrega corretamente fazendo com que não apareça o texto (por exemplo) de froma correta. (É como se as divs estão flutuando na página)
+    -->
+    <div class="p-5 bg-primary fixed-top"></div>
+    <div class="p-5 bg-dark fixed-bottom"></div>
+    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus rerum cum provident ducimus nam rem ad eveniet culpa eaque? Sunt beatae minima rem sequi magnam illo deleniti commodi ipsa delectus molestias, obcaecati culpa facere inventore impedit aliquam. Excepturi itaque fuga, incidunt quisquam dolore culpa ex sed voluptate mollitia aspernatur pariatur.</p>
 </body>
 
 </html>
