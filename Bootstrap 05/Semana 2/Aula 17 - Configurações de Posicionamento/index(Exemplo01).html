@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <title>Posicionamento</title>
+</head>
+
+<body>
+    <!-- Podemos atribuir as divs como uma pilha
+    vstack -> Faz com que a div container atribua os demais elementos dentro dela como uma pilha vertical
+    hstack -> Faz com que a div atribua como pilha horizontal, porém ao mesmo tempo atribui o flex-box automaticamente
+    gap-3 -> Faz a separação dos elementos (Temos variantes responsivas)
+
+    position-absolute -> Ela fica absoluta dentro de toda a página e podemos modificar a sua localização com o bottom-(valor), star-(valor), top-(valor) e end-(valor)
+
+    position-relative -> A div para tomar como referência a div container se formos usar essa propriedade na div dentro da div container.
+
+-->
+    <div class="container my-3 hstack gap-3">
+        <div class="p-5 bg-primary"></div>
+        <!-- Aqui temos um  separador vertical, podemos atribuir a esse elemento o ms-auto para fazer uma separação lateral -->
+        <div class="vr"></div>
+        <div class="p-5 bg-secondary"></div>
+        <div class="p-5 bg-dark"></div>
+    </div>
+</body>
+
+</html>

@@ -18,8 +18,13 @@
     OBS: Quando atribuimos o modo de fixação, a parte de renderização não carrega corretamente fazendo com que não apareça o texto (por exemplo) de froma correta. (É como se as divs estão flutuando na página)
     -->
     <div class="p-5 bg-primary fixed-top"></div>
-    <div class="p-5 bg-dark fixed-bottom"></div>
+    <!-- Aqui temos uma div com o mesmo tamanho porém não flutuante para que os elementos fiquem corretamente alinhados -->
+    <div class="p-5 invisible"></div>
     <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus rerum cum provident ducimus nam rem ad eveniet culpa eaque? Sunt beatae minima rem sequi magnam illo deleniti commodi ipsa delectus molestias, obcaecati culpa facere inventore impedit aliquam. Excepturi itaque fuga, incidunt quisquam dolore culpa ex sed voluptate mollitia aspernatur pariatur.</p>
+    <!-- É necessário colocar uma div que não é fixa para que podemos atribuir os elementos corretamente -->
+    <div class="p-5 invisible"></div>
+    <div class="p-5 bg-dark fixed-bottom"></div>
+    <hr>
 </body>
 
 </html>
