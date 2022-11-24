@@ -10,22 +10,68 @@
     <title>Formulário</title>
 </head>
 
+<!-- As classes apresentadas nessa aula são de formato que modifica somente a aparência do formulário de forma mais sofisticada -->
+
 <body>
-    <div class="container">
-        <form action=""></form>
-        <div>
-            <label for=""></label><input type="text">
-            <div></div>
+    <div class="container p-5">
+        <form>
+            <div class="mb-3">
+                <!-- Temos a classe para a formatação de uma label;
+            form-label -->
+                <label for="email" class="form-label">E-Mail</label>
+                <!-- Temos também um tipo de formatação para o input (entrada);
+            form-control
+            
+            Temos algumas propriedades para configuração de formulário no HTML e o bootstrap modifica de acordo com a associação
+            disable -> Desabilitado
+            readonly -> Apenas visualisação, isso se colocarmos um valor
+            placeholdee -> Visualização de fundo para facilitar o preenchimento do usuário.
+
+            Temos classes do bootstrap para modificação dos campos;
+            form-control-sm -> O campo fica um pouco menor (Fora do padrão)
+            form-control-lg -> O campo fica um pouco maior (fora do padrão)
+            form-control-plaintext -> O campo fica como um texto normal, mas ao clicar ele é modificado
+        -->
+                <input type="email" id="email" class="form-control">
+                <!-- Temos também uma classe para o texto que será exibido no formulário
+            form-text -->
+                <div class="form-text">Nunca compartilhemos seu e-mail com terceiros.</div>
+            </div>
+            <div class="mb-3">
+                <label for="senha" class="form-label">Senha</label>
+                <input type="password" id="senha" class="form-control">
+            </div>
+            <!-- Temos uma classe especial para o checkbox;
+        form-check -> Para a div 
+        form-check-input -> Para o input 
+        form-check-label -> Para Label 
+    -->
+            <div class="mb-3 form-check">
+                <input type="checkbox" id="lembrar">
+                <label for="lembrar">Lembrar de mim.</label>
+            </div>
+            <!-- Temos também uma formatação propria para os botôes e veremos isso em aulas seguintes;
+        btn btn-primary -->
+            <button type="submit" class="btn btn-dark">Entrar</button>
+        </form>
+        <hr>
+        <input type="file"id="arquivo" class="form-control">
+        <input type="color" id="cor" class="form-control">
+        <hr>
+        <!-- div.mb-3>(label.form-label{Cidade}+input.form-control[placeholder="Digite para buscar..."]) -->
+        <div class="mb-3">
+            <label for="" class="form-label">Cidade</label>
+            <input type="text" class="form-control" list="cidades" placeholder="Digite para buscar...">
+            <!-- datalist#cidades>(option[value="Cidade $"])*6 -->
+            <datalist id="cidades">
+                <option value="Cidade 1"></option>
+                <option value="Cidade 2"></option>
+                <option value="Cidade 3"></option>
+                <option value="Cidade 4"></option>
+                <option value="Cidade 5"></option>
+                <option value="Cidade 6"></option>
+            </datalist>
         </div>
-        <div>
-            <label for=""></label><input type="text">
-            <div></div>
-        </div>
-        <div>
-            <label for=""></label><input type="text">
-            <div></div>
-        </div>
-        <input type="button" value="">
     </div>
 </body>
 
