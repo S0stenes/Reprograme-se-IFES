@@ -7,14 +7,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <style src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></style>
-    <title>Docs</title>
+    <title>Campos de Checagem</title>
 </head>
 
 <body>
+    <!-- OBS: Todos esses campos tem as configurações de atribuições de um formulário -->
+    <!-- Aqui temos as configurações para um checkbox com o bootstrap 5 -->
     <div class="container p-5">
         <div class="mb-3 form-check">
             <input type="checkbox" class="form-check-input" id="novo">
-            <label for="novo">Produto Novo</label>
+            <label class="form-check-label" for="novo">Produto Novo</label>
+        </div>
+        <hr>
+        <!-- Aqui temos as configurações para o tipo radio, é bem parecido com o checkbox, 
+        por padrão o bootstrap atribui aos elementos dentro de uma div na forma de empilhamento.
+        Podemos modificar esse empilhamento com o; form-check-inline 
+        form-check-reverse -> Faz com que os campos fiquem alinhados na direita.
+    -->
+        <div class="mb-3 form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="sexo" id="M">
+            <label class="form-check-label" for="M">Masculino</label>
+        </div>
+        <div class="mb-3 form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="sexo" id="F">
+            <label class="form-check-label" for="F">Feminino</label>
+        </div>
+        <hr>
+        <!-- Temos uma forma diferente de atribuir a marcação do checkbox com o; form-switch -->
+        <div class="mb-3 form-switch">
+            <input type="checkbox" class="form-check-input" id="switch">
+            <label class="form-check-label" for="switch">Marcação com o Switch</label>
+        </div>
+        <hr>
+        <!-- div.mb-3>input:checkbox+label{Entrega Rápida} -->
+        <!-- Com as classes do bootstrap podemos fazer modificações no momento da checagem -->
+        <div class="mb-3">
+            <input type="checkbox" name="" id="entrega" class="btn-check">
+            <label class="form-check-label" for="entrega" class=" btn btn-outline-primary">Entrega Rápida</label>
+        </div>
+        <hr>
+        <!-- Com a modificação em radio -->
+        <div class="mb-3">
+            <input type="radio" name="Serviço" id="rapido" class="btn-check">
+            <label for="rapido" class=" btn btn-outline-dark">Serviço Rápido</label>
+        </div>
+        <div class="mb-3">
+            <input type="radio" name="Serviço" id="lento" class="btn-check">
+            <label for="lento" class=" btn btn-outline-dark">Serviço Lento</label>
         </div>
     </div>
 
