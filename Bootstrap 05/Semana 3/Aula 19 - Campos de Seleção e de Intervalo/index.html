@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></style>
+    <title>Select, Range e Botões</title>
+</head>
+
+<body>
+    <div class="container p-5">
+        <!-- div.mb-3>label{Opção Desejada}+select>option{Opção $}*6 -->
+        <div class="mb-3">
+            <label for="" class="form-label">Opção Desejada</label>
+            <!-- Aqui atribuimos essa div para que possamos diminuir o tamanho do campo de seleção -->
+            <div class="col-4">
+                <!-- O bootstrap oferece uma formatação para o seletor;
+            form-selector
+            form-select-sm -> Atribui o campo select um tamanho menor
+            form-select-lg -> Atribui o campo select um tamanho maior
+
+            Opções de configurações para o select;
+            multiple -> O campo é mostrado com apenas 4 seletores e mostra a barra de rolagem
+            size -> Atribuimos o tamanho do multiple, se colocarmos o size como 6 aparecerá todos os elementos do select
+            disabled -> Desebilitado
+             -->
+                <select class="form-select ">
+                    <option value="">Opção 1</option>
+                    <option value="">Opção 2</option>
+                    <option value="">Opção 3</option>
+                    <option value="">Opção 4</option>
+                    <option value="">Opção 5</option>
+                    <option value="">Opção 6</option>
+                </select>
+            </div>
+        </div>
+        <hr>
+        <!-- div.mb-3>label+input:range -->
+        <div class="mb-3">
+            <label for="faixa" class="form-label">Etapa</label>
+            <!-- Atribuimos a classe especifica para o range
+            form-range 
+                
+            Opções de configurações para o range;
+            min -> mínimo
+            max -> máximo
+            step -> pulo
+            valor -> valor quer será atribuido de início
+            -->
+            <input type="range" class="form-range" id="faixa">
+        </div>
+        <hr>
+        <!-- btn -> Atribui como botão
+        btn-dark -> Atribui a modificação das cores do botão com as váriações que o bootstrap oferece
+        btn-outline-(cor) -> Atribui um contorno no botão
+        btn-lg -> O botão fica maior
+        btn-sm -> O botão fica menor
+        -->
+        <a href="#" class="btn btn-outline-dark">Link</a>
+        <hr>
+        <button class="btn btn-warning" disabled>Botão</button>
+        <hr>
+        <button class="btn btn-primary" data-bs-toggle="button">Botão Marcável</button>
+    </div>
+
+</body>
+
+</html>
