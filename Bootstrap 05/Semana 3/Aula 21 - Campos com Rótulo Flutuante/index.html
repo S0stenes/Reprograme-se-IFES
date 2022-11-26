@@ -7,11 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <style src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></style>
-    <title>Docs</title>
+    <title>Campos com Título Flutuante</title>
 </head>
 
 <body>
-
+    <!-- div.container>div>input:email#email+label[for=email]{E-mail} -->
+    <div class="container p-5">
+        <!-- form-floating -> Atribui o formato de título flutuante -->
+        <div class="form-floating">
+            <!-- Se atribuirmos o placeholder com o form-floating o Título fica dentro do campo e ao clicar ele sobe -->
+            <input type="email" class="form-control" name="" id="email" placeholder=" ">
+            <label for="email" class="form-label">E-mail</label>
+        </div>
+    </div>
 </body>
 
 </html>
