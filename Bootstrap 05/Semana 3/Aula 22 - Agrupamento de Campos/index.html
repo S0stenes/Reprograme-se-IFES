@@ -7,11 +7,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <style src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></style>
-    <title>Docs</title>
+    <title>Complementos de Campos</title>
 </head>
 
 <body>
-
-</body>
-
+    <div class="container p-5">
+        <!-- Com o input-group podemos atribuir como se fosse um grupo para associarmos os botôes juntamente com o texto -->
+        <div class="mb-3 input-group">
+            <input type="text" name="" id="nome" class="form-control">
+            <label for="nome" class="input-group-text">Nome Completo</label>
+        </div>
+        <!-- Atribuindo o complemento dos dois lados -->
+        <div class="mb-3 input-group">
+            <label for="nome" class="input-group-text">R$</label>
+            <!-- No input podemos colocar a classe text-end para que o text seja digitado no final, para ficar melhor a digitação -->
+            <input type="text" id="nome" class="form-control text-end">
+            <label for="nome" class="input-group-text">,00</label>
+        </div>
+        <div class="mb-3 input-group">
+            <!-- Atribuindo no meio o complemento -->
+            <input type="text" id="nome" class="form-control text-end">
+            <!-- Não faz sentido usarmos o label aqui sendo que a atribuição em span é melhor para esse tipo de demonstração, já que não iremos apontar para nenhum input associado -->
+            <span for="nome" class="input-group-text">@</span>
+            <input type="text" id="nome" class="form-control">
+        </div>
+        <!-- Associando ao textarea -->
+        <div class="mb-3 input-group">
+            <label for="texto" class="input-group-text">Mensagem</label>
+            <textarea type="text" name="" id="texto" class="form-control"></textarea>
+        </div>
+        <!-- Atribuindo ao checkbox o complemento -->
+        <div class="mb-3 input-group">
+            <div class="input-group-text">
+                <input type="checkbox" class="form-check-input mt-0">
+            </div>
+            <input type="text" class="form-control">
+        </div>
+        <div class="mb-3 input-group">
+            <!-- Atribuindo a dois campos o complemento no inicio para nome completo -->
+            <span for="nome" class="input-group-text">Nome Completo</span>
+            <input type="text" placeholder="Primeiro nome" id="nome" class="form-control">
+            <input type="text" placeholder="Segundo nome" id="nome" class="form-control">
+        </div>
+        <div class="mb-3 input-group">
+            <span class="input-group-text">$</span>
+            <span class="input-group-text">BRL</span>
+            <input type="text" class="form-control" placeholder="Valor">
+        </div>
+        <!-- Atribuindo um complemento em um botão -->
+        <div class="mb-3 input-group">
+            <input type="search" class="form-control">
+            <button class="btn btn-outline-secondary">Buscar</button>
+        </div>
+    </div>
 </html>
