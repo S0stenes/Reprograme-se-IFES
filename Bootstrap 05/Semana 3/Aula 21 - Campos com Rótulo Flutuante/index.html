@@ -14,10 +14,36 @@
     <!-- div.container>div>input:email#email+label[for=email]{E-mail} -->
     <div class="container p-5">
         <!-- form-floating -> Atribui o formato de título flutuante -->
-        <div class="form-floating">
-            <!-- Se atribuirmos o placeholder com o form-floating o Título fica dentro do campo e ao clicar ele sobe -->
+        <div class="form-floating mb-3">
+            <!-- Se atribuirmos o placeholder com o form-floating o Título fica dentro do campo e ao clicar ele sobe 
+            OBS; De suma importancia usar o placeholder=" " para que o campo flutue ao clicar-->
             <input type="email" class="form-control" name="" id="email" placeholder=" ">
             <label for="email" class="form-label">E-mail</label>
+        </div>
+        <div class="form-floating">
+            <input type="password" class="form-control" id="senha" placeholder=" ">
+            <label for="senha" class="form-label"> Senha</label>
+        </div>
+        <hr>
+        <!-- div.form-floating>textarea.form-control#msg[style="height:100px" placeholder=" "]+label[for="msg"]{mensagem} -->
+        <div class="form-floating">
+            <textarea id="msg" class="form-control" style="height:100px" placeholder=" "></textarea>
+            <label for="msg">Mensagem</label>
+        </div>
+        <hr>
+        <!-- div.form-floating>(select.form-select#cidade[placeholder=" "]>option{Cidade $}*5)+label[for="cidade"]{Cidade} -->
+        <!-- No select temos alguns ponto negativos para ponto flutuante, pois não tem como colocarmos nada vazio para atribuir dentro do campo,
+        temos também outra limitação,  no caso se fossemos atribuir um tamanho para select com o size, ele não será atribuido.
+        -->
+        <div class="form-floating">
+            <select class="form-select" id="cidade" placeholder=" ">
+                <option value="">Cidade 1</option>
+                <option value="">Cidade 2</option>
+                <option value="">Cidade 3</option>
+                <option value="">Cidade 4</option>
+                <option value="">Cidade 5</option>
+            </select>
+            <label for="cidade">Cidade</label>
         </div>
     </div>
 </body>
