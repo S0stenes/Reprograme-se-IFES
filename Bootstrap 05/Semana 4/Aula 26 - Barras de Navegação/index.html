@@ -6,12 +6,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <style src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
     <title>Barras de Navegação</title>
 </head>
 
 <body>
+    <nav class="navbar bg-light navbar-expand-sm">
+        <div class="container">
+            <a href="" class="navbar-brand d-flex align-items-center"> <i class="bi-bootstrap-fill fs-1 me-2"></i> Bootstrap</a>
+            <!-- Aqui adicionamos um texto juntamente com o icone
+            <span class="navbar-text me-auto">Curso Completo</span>
+            -->
 
+            <!-- Logo após o ícone do Bootstrap que foi criado, aqui nos atribuimos um botão que faz animação de abertura e fechamento -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar"></button>
+
+            <!-- Aqui estamos atribuindo a barra de vanegação alguns link, atribuindo com as classes do bootstrap para que seja realizado a operação, para que o menu seja mostrado devemos colocar na nav principal navbar-expand-sm-->
+            <!-- O id colocado serve para atribuir que é esse menu que usaremos como base para o botão animado -->
+            <div class="collapse navbar-collapse" id="menuNavbar">
+                <!-- Active -> Serve para que fique mais escuro no momento em que o mouse passa por cima -->
+                <div class="navbar-nav active">
+                    <a href="#" class="nav-link">Principal</a>
+                    <a href="#" class="nav-link">Produtos</a>
+                    <a href="#" class="nav-link">Contato</a>
+                    <!-- Aqui nós desabilitamos um link -->
+                    <a href="#" class="nav-link disabled">Sobre</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="btn-group">
+            <button class="btn btn-primary">Botao 1</button>
+            <button class="btn btn-warning">Botao 2</button>
+            <button class="btn btn-danger">Botao 3</button>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">Botão 4
+                </button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="#" class="dropdown-item">Submenu 1</a>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-item">Submenu 2</a>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-item">Submenu 3</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
